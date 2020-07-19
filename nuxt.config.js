@@ -168,6 +168,7 @@ export default {
       families: ['Assistant:400,700'] // Loads Lato font with weights 400 and 700
     }
   },
+  generate: {fallback: '404.html'},
   /*
    ** Build configuration
    */
