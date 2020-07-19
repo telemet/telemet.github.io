@@ -6,9 +6,11 @@
     <!-- Counter -->
     <section id="main" class="">
       <div class="text-center -mt-12">
-        <h1 class="text-14xl font-bold text-red-700">
-          404
-        </h1>
+        <NuxtLink to="/">
+          <h1 class="text-14xl font-bold text-red-700">
+            404
+          </h1>
+        </NuxtLink>
 
         <NuxtLink to="/" class="block text-gray-100 text-3xl -mt-12">
           דף לא זמין
