@@ -1,5 +1,12 @@
 /* Base */
 
+p a {
+  @apply text-white  border-red-700 border-b border-dashed;
+  &:hover {
+    @apply text-red-700 border-white;
+  }
+}
+
 /* img {
   filter: grayscale(0.5);
 }
@@ -15,7 +22,6 @@ img:hover {
 html.he {
   @apply font-he;
 } */
-
 
 /* Utilities */
 /* Hide input type number-control arrows */
@@ -46,10 +52,12 @@ html.he {
   );
 } */
 
-.page-enter-active, .page-leave-active {
+.page-enter-active,
+.page-leave-active {
   transition: opacity 0.333s ease-in-out;
 }
-.page-enter, .page-leave-to {
+.page-enter,
+.page-leave-to {
   opacity: 0;
 }
 

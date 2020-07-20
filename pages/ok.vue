@@ -1,7 +1,7 @@
 <template lang="html">
   <!-- Wrapper -->
   <div class="min-h-screen mx-auto">
-    <AppPoster poster="telemet-balfur2" />
+    <AppPoster poster="telemet-lions" />
 
     <!-- Counter -->
     <section id="main" class="">
@@ -41,8 +41,8 @@ export default {
   data() {
     return {
       title: 'אודות',
-      description: 'אודות טלאֱמֶת',
-      poster: 'https://telemet.org/images/telemet-meta-poster.jpg'
+      description: 'אודות טלאֱמֶת'
+      // poster: 'https://telemet.org/images/telemet-meta-poster.jpg'
     }
   },
   head() {

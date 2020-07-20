@@ -38,8 +38,8 @@ export default {
   data() {
     return {
       title: 'אודות',
-      description: 'אודות טלאֱמֶת',
-      poster: 'https://telemet.org/images/telemet-meta-poster.jpg'
+      description: 'אודות טלאֱמֶת'
+      // poster: 'https://telemet.org/images/telemet-meta-poster.jpg'
     }
   },
   head() {

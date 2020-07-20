@@ -1,7 +1,7 @@
 <template lang="html">
   <!-- Wrapper -->
   <div class="min-h-screen mx-auto">
-    <AppPoster poster="telemet-balfur2" />
+    <AppPoster poster="telemet-lions" />
 
     <!-- Counter -->
     <section id="main" class="">
@@ -17,8 +17,30 @@
           שהתעוררו לאמת הוא בראש מעינינו
         </h1>
 
-        <p class="text-gray-300 text-lg md:text-xl lg:text-2xl">
-          אנו זקוקים לעזרתכם, הרשמו פה ועכשיו -
+        <p
+          class="w-3/4 md:w-3/5 mx-auto text-gray-200 text-md md:text-lg lg:text-xl mt-6 mb-4"
+        >
+          השלב ראשון במערכה לשחרור העם הוא גיוס חברים וקרובים שמוכנים לפעול ביחד
+          באופן מאורגן, שיטתי וממוקד למען החופש של כולנו ונטרולה המיידי של
+          ״המציאות החדשה״ בחסות הסדר העולמי החדש ומהנדסי החברה בארץ ובעולם.
+        </p>
+        <p
+          class="w-3/4 md:w-3/5 mx-auto text-gray-200 text-md md:text-lg lg:text-xl"
+        >
+          כולנו ביחד נהייה חייבים להשיג
+          <a
+            href="https://he.wikipedia.org/wiki/%D7%9E%D7%A1%D7%94_%D7%A7%D7%A8%D7%99%D7%98%D7%99%D7%AA_(%D7%A1%D7%95%D7%A6%D7%99%D7%95%D7%9C%D7%95%D7%92%D7%99%D7%94)"
+            title="מסה קריטית (סוציולוגיה)"
+            target="_blank"
+            >מסה קריטית
+          </a>
+          לפני שיוצאים לפעולה אחת ועוצמתית. לכן,
+          <b
+            >הגיוס מתבצע בשיטת חבר-מביא-חבר והאחריות לגיוס היא משותפת לכל חברי
+            המערכה.</b
+          >
+          גם את/ה תתבקש/י לפעול לקידום מטרה זו. פרטים נוספים ישלחו אליך במייל
+          לאחר הרישום.
         </p>
         <div class="">
           <NuxtLink to="/#join">
@@ -43,8 +65,8 @@ export default {
   data() {
     return {
       title: 'אודות',
-      description: 'אודות טלאֱמֶת',
-      poster: 'https://telemet.org/images/telemet-meta-poster.jpg'
+      description: 'אודות טלאֱמֶת'
+      // poster: 'https://telemet.org/images/telemet-meta-poster.jpg'
     }
   },
   head() {
