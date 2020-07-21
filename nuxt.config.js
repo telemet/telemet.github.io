@@ -32,6 +32,8 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    // https://nuxtjs.org/blog/creating-blog-with-nuxt-content/#conclusion
+    '@nuxt/content',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
@@ -53,10 +55,10 @@ export default {
     configPath: '~/tailwind.config.js',
     cssPath: '~/assets/css/tailwind.css'
     // purgeCSSInDev: true
+    /*
+     ** Nuxt.js modules
+     */
   },
-  /*
-   ** Nuxt.js modules
-   */
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
@@ -169,6 +171,10 @@ export default {
     }
   },
   generate: {fallback: '404.html'},
+  components: true,
+  content: {
+    nestedProperties: ['author.name']
+  },
   /*
    ** Build configuration
    */

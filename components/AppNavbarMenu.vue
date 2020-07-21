@@ -5,11 +5,11 @@
       class="elipses fill-current w-6 h-6 text-gray-200 hover:text-white cursor-pointer"
       icon-name="Menu"
     >
-      <elipses />
+      <Elipses />
     </icon>
     <ul
       v-show="isOpen"
-      class="dropdown mt-3 w-36 min-w-full rounded-md bg-red-700 shadow-lg"
+      class="dropdown mt-1 w-36 min-w-full rounded-md bg-red-700 shadow-lg"
     >
       <li><nuxt-link to="/info">אודות</nuxt-link></li>
       <li><a href="https://t.me/telemetISR" target="blank">טלגרם</a></li>
