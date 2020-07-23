@@ -53,7 +53,8 @@ export default {
   ],
   tailwindcss: {
     configPath: '~/tailwind.config.js',
-    cssPath: '~/assets/css/tailwind.css'
+    cssPath: '~/assets/css/tailwind.css',
+    exposeConfig: true
     // purgeCSSInDev: true
     /*
      ** Nuxt.js modules

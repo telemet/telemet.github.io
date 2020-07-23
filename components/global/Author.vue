@@ -1,11 +1,12 @@
 <template>
-  <NuxtLink :to="`/posts/author/${author.name}`">
-    <img :src="author.img" />
-    <div>
-      <!-- <h4>Author</h4> -->
-      <p>{{ author.name }}</p>
-      <!-- <p>{{ author.bio }}</p> -->
-    </div>
+  <NuxtLink :to="`/posts/author/${author.name}`" class="flex">
+    <!-- <img
+      :src="author.img"
+      class="w-12 h-12 border-2 border-gray-600 rounded-full"
+    /> -->
+
+    <p class="md:py-2 self-center">{{ author.name }}</p>
+    <!-- <p>{{ author.bio }}</p> -->
   </NuxtLink>
 </template>
 

@@ -159,7 +159,7 @@ export default {
 } */
 
 .form .error {
-  @apply relative top-0 mt-1 text-sm text-white tracking-wide bg-red-700 py-1 px-2 rounded block text-center;
+  @apply relative top-0 mt-1 text-sm text-white tracking-wide bg-gray-600 py-1 px-2 rounded block text-center border-r-8 border-red-600;
 }
 
 .form-group {
@@ -175,7 +175,7 @@ export default {
 }
 
 .bar {
-  @apply relative block border-b border-gray-400;
+  @apply relative block border-b border-gray-600;
   &::before {
     content: '';
     @apply w-0 bottom-0 absolute bg-red-700 z-10;

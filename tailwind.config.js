@@ -192,7 +192,8 @@ module.exports = {
       '72': '18rem',
       '80': '20rem',
       '96': '24rem',
-      '2/3': '66.666667%'
+      '2/3': '66.666667%',
+      full: '100%'
     },
     backgroundColor: (theme) => theme('colors'),
     backgroundPosition: {
@@ -779,5 +780,17 @@ module.exports = {
   corePlugins: {
     // container: false
   },
-  plugins: [require('tailwindcss-rtl')]
+  plugins: [require('tailwindcss-rtl')],
+  purge: {
+    // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      'components/**/*.vue',
+      'content/**/*.md',
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.js',
+      'nuxt.config.js'
+    ]
+  }
 }

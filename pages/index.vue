@@ -16,7 +16,7 @@
         <h1 v-scroll-to="'#people'" class="text-center text-4xl">
           <span class="font-bold pl-2">#כולנו</span>
           <span class="divider text-gray-400">|</span>
-          <span class="text-gray-200 pr-2">
+          <span class="text-gray-400 pr-2">
             מתאגדים ונערכים לשחרור העם
           </span>
         </h1>
@@ -29,7 +29,7 @@
           <div class="clearfix" />
           <AppButton
             v-scroll-to="'#people'"
-            class="mx-auto mt-2 text-gray-400"
+            class="mx-auto mt-2 text-gray-500"
             title="הכוח של האנשים"
           />
         </div>
