@@ -1,5 +1,5 @@
 <template>
-  <div class="post bg-gray-900">
+  <div class="post bg-gray-900 min-h-screen">
     <article class="container mx-auto py-10 px-6 max-w-screen-md">
       <!-- Post Image -->
       <!-- <div class="py-8 md:py-10 px-10 md:px-20">
