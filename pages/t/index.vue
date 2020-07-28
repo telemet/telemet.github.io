@@ -9,8 +9,8 @@
       <ul class="mt-8">
         <li v-for="post of posts" :key="post.slug" class="">
           <NuxtLink
-            :to="{name: 'posts-slug', params: {slug: post.slug}}"
-            class="my-4 p-2 bg-gray-800 hover:bg-gray-700 rounded-lg block transition-colors duration-150 ease-in-out"
+            :to="{path: 't/', name: 't-slug', params: {slug: post.slug}}"
+            class="my-4 px-2 py-4 bg-gray-800 hover:bg-gray-700 rounded-lg block transition-colors duration-150 ease-in-out"
           >
             <!-- <img
               :src="post.img"
@@ -18,7 +18,7 @@
             /> -->
             <div class="px-2">
               <h2
-                class="text-2xl md:text-3xl md:mt-4 md:mb-0 font-bold text-red-600 leading-snug block"
+                class="text-2xl md:text-3xl font-bold text-red-600 leading-snug block"
               >
                 {{ post.title }}
               </h2>
@@ -35,7 +35,7 @@
 <script>
 export default {
   async asyncData({$content, params}) {
-    const posts = await $content('posts', params.slug)
+    const posts = await $content('t', params.slug)
       .only(['title', 'description', 'img', 'slug', 'author'])
       .sortBy('createdAt', 'desc')
       .fetch()

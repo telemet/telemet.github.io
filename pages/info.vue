@@ -1,7 +1,7 @@
 <template lang="html">
   <!-- Wrapper -->
   <div class="min-h-screen mx-auto">
-    <AppPoster poster="telemet-lions" />
+    <AppPoster poster="telemet-hands" />
 
     <!-- Counter -->
     <section id="main" class="">

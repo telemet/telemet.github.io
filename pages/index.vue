@@ -13,7 +13,7 @@
           v-scroll-to="{element: '#join', duration: 1222, offset: 0}"
           class="py-4"
         />
-        <h1 v-scroll-to="'#people'" class="text-center text-4xl">
+        <h1 v-scroll-to="'#people'" class="text-center text-4xl cursor-pointer">
           <span class="font-bold pl-2">#כולנו</span>
           <span class="divider text-gray-400">|</span>
           <span class="text-gray-400 pr-2">

@@ -11,13 +11,13 @@
       v-show="isOpen"
       class="dropdown mt-1 w-36 min-w-full rounded-md bg-red-700 shadow-lg"
     >
-      <li><nuxt-link to="/info">אודות</nuxt-link></li>
-      <li><a href="https://t.me/telemetISR" target="blank">טלגרם</a></li>
+      <li><nuxt-link to="/t/unity">אודות</nuxt-link></li>
+      <!-- <li><a href="https://t.me/telemetISR" target="blank">טלגרם</a></li>
       <li>
         <a href="https://www.facebook.com/groups/telemetISR" target="blank"
           >פייסבוק</a
         >
-      </li>
+      </li> -->
     </ul>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="`/posts/author/${author.name}`" class="flex">
+  <NuxtLink :to="`/t/author/${author.name}`" class="flex">
     <!-- <img
       :src="author.img"
       class="w-12 h-12 border-2 border-gray-600 rounded-full"

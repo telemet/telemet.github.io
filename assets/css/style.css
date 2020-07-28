@@ -1,10 +1,16 @@
 /* Base */
 
 p a {
-  @apply text-white  border-red-700 border-b border-dashed;
+  @apply border-red-600 border-b border-dashed;
   &:hover {
-    @apply text-red-700 border-white;
+    @apply text-white;
   }
+}
+
+/* Transitions */
+
+.trans-100 {
+  @apply transition-colors duration-100 ease-in-out;
 }
 
 /* img {
