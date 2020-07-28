@@ -39,7 +39,7 @@
 
       <!-- Post Image -->
       <img
-        :src="post.img"
+        :src="'../' + post.img"
         :alt="post.alt"
         class="mt-3 block w-full h-full object-cover rounded-lg"
       />
@@ -125,7 +125,7 @@ export default {
       document.execCommand('Copy')
     },
     copyValue() {
-      return 'telemet.org/t/' + this.post.slug
+      return 'telemet.org/t/' + this.post.author.name + '/' + this.post.slug
     }
   }
 }

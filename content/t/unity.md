@@ -4,9 +4,9 @@ description: כולנו מתאגדים ונערכים לשחרור העם
 img: img/telemet-blafur3.jpg
 alt: המערכה למען שחרור העם
 author:
-  slug: tal-amitay
   img: tal-amitay.jpg
-  name: טל אמיתי
+  name: tal.amitay
+  hname: טל אמיתי
   bio: "שחקן במשחק החיים, וולונטריסט ערני, איש טכנולוגיה, ידע, מדעים ואומנויות. עושה את העבודה הגדולה, מבין חופשי ומסור לאמת האחת."
 
 ---

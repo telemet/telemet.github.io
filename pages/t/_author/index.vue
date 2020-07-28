@@ -9,7 +9,7 @@
         <h1
           class="text-4xl md:text-5xl mt-2 md:mt-4 font-bold text-red-600 leading-snug text-center block"
         >
-          {{ t[0].author.name }}
+          {{ t[0].author.hname }}
         </h1>
 
         <p
@@ -19,7 +19,7 @@
         </p>
       </div>
 
-      <h3 class="text-gray-500">רשימת מאמרים מאת {{ t[0].author.name }}:</h3>
+      <h3 class="text-gray-500">רשימת מאמרים מאת {{ t[0].author.hname }}:</h3>
       <!-- <hr /> -->
       <ul>
         <li
@@ -28,7 +28,7 @@
           class="my-2 text-lg md:text-xl tracking-wide bg-gray-700 hover:bg-gray-600 rounded-md transition-colors duration-100 ease-in-out"
         >
           <NuxtLink
-            :to="{name: 't-slug', params: {slug: post.slug}}"
+            :to="{name: 't-author-slug', params: {slug: post.slug}}"
             class="text-gray-400 hover:text-white transition-colors duration-100 ease-in-out"
           >
             <!-- <img :src="`../${post.img}`" :alt="post.alt" /> -->

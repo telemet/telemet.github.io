@@ -28,7 +28,7 @@
           />
           <div class="clearfix" />
           <NuxtLink
-            to="/t/unity"
+            to="/t/tal.amitay/unity"
             class="mx-auto mt-2 inline-block text-gray-500 hover:text-gray-100 trans-100 focus"
             >איך משיגים חופש?</NuxtLink
           >

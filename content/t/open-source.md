@@ -5,7 +5,8 @@ img: img/telemet-open-source.jpg
 alt: קוד פתוח
 author: 
   img: tal-amitay.jpg
-  name: טל אמיתי
+  name: tal.amitay
+  hname: טל אמיתי
   bio: "שחקן במשחק החיים, וולונטריסט ערני, איש טכנולוגיה, ידע, מדעים ואומנויות. עושה את העבודה הגדולה, מבין חופשי ומסור לאמת האחת."
 ---
 
@@ -19,8 +20,8 @@ author:
 
 להלן רשימת הטכנולוגיות המרכזיות[^2] בהן נעשה שימוש בפיתוח ממשק טלאמת הנוכחי: 
 
-- [Vue JS](https://vuejs.org/)
 - [Nuxt JS](https://nuxtjs.org/)
+- [Vue JS](https://vuejs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Babel JS](https://babeljs.io/)
 - [ESLint](https://eslint.org/)
