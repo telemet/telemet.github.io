@@ -5,7 +5,7 @@
       <div class="flex mt-8">
         <author
           :author="post.author"
-          class="py-3 md:py-2 px-3 md:px-4 ml-2 font-bold text-base md:text-lg bg-gray-800 hover:bg-gray-700 text-gray-400 hover:text-white rounded-md md:rounded-md"
+          class="py-3 md:py-2 px-3 md:px-4 ml-2 font-bold text-base md:text-lg bg-gray-800 hover:bg-gray-700 text-gray-400 hover:text-white rounded-md md:rounded-md focus"
         />
 
         <div
@@ -78,8 +78,9 @@
 
       <a
         :href="
-          'https://github.com/telemet/telemet/tree/master/content/t/' +
-            post.slug
+          'https://github.com/telemet/telemet/blob/master/content/t/' +
+            post.slug +
+            post.extension
         "
         title="קישור עריכה"
         target="_blank"

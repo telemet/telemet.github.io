@@ -3,7 +3,7 @@
 # bash deploy.shell
 
 # abort on errors
-# set -e
+set -e
 
 # build
 npm run generate

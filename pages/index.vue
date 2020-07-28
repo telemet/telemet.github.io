@@ -23,13 +23,13 @@
         <div class="mt-10 text-center">
           <AppButton
             v-scroll-to="{element: '#join', duration: 1222, offset: 0}"
-            class="btn btn-red mx-auto"
+            class="btn btn-red mx-auto focus"
             title="להרשמה"
           />
           <div class="clearfix" />
           <NuxtLink
             to="/t/unity"
-            class="mx-auto mt-2 block text-gray-500 hover:text-gray-100 trans-100"
+            class="mx-auto mt-2 inline-block text-gray-500 hover:text-gray-100 trans-100 focus"
             >איך משיגים חופש?</NuxtLink
           >
         </div>

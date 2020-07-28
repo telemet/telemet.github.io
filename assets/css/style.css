@@ -5,10 +5,19 @@ p a {
   &:hover {
     @apply text-white;
   }
+  &:focus {
+    @apply shadow-outline outline-none rounded-lg;
+  }
+}
+
+.focus {
+  @apply outline-none;
+  &:focus {
+    @apply shadow-outline outline-none rounded;
+  }
 }
 
 /* Transitions */
-
 .trans-100 {
   @apply transition-colors duration-100 ease-in-out;
 }

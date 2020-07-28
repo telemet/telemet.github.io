@@ -1,15 +1,15 @@
 <template lang="html">
-  <footer>
-    <app-social />
-    <NuxtLink to="/">
+  <footer class="h-16 w-full bg-black flex justify-between relative">
+    <NuxtLink to="/" class="self-center mr-5">
       <AppLogotype
-        :width="140"
+        :width="68"
         :height="32"
         :icon-color="'transperant'"
         class="logotype dark"
         icon-name="Telemet"
       />
     </NuxtLink>
+    <app-social class="ml-5 pl-02 self-center" />
   </footer>
 </template>
 
@@ -26,26 +26,3 @@ export default {
   }
 }
 </script>
-
-<style scoped lang="postcss">
-footer {
-  position: relative;
-  display: flex !important;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  height: 66px;
-  direction: rtl;
-  width: 100%;
-  background: black;
-}
-
-.logotype {
-  margin: 15px 0;
-  display: flex-item;
-}
-.app-social {
-  display: flex-item;
-  padding: 0 8px;
-  margin: 13px 20px 10px;
-}
-</style>
