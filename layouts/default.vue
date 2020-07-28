@@ -19,6 +19,6 @@ export default {
 </script>
 <style lang="postcss">
 body {
-  @apply bg-black text-white antialiased;
+  @apply bg-black text-gray-400 antialiased;
 }
 </style>
