@@ -11,7 +11,7 @@ export default {
   props: {
     poster: {
       type: String,
-      default: 'telemet-hands'
+      default: 'telemet-balfur3'
     }
   },
   computed: {
