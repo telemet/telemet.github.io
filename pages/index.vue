@@ -27,11 +27,11 @@
             title="להרשמה"
           />
           <div class="clearfix" />
-          <AppButton
-            v-scroll-to="'#people'"
-            class="mx-auto mt-2 text-gray-500"
-            title="הכוח של האנשים"
-          />
+          <NuxtLink
+            to="/t/unity"
+            class="mx-auto mt-2 block text-gray-500 hover:text-gray-100 trans-100"
+            >איך משיגים חופש?</NuxtLink
+          >
         </div>
       </div>
     </section>

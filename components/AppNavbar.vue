@@ -1,7 +1,7 @@
 <template>
   <header
     :class="{'menu--hidden': !showMenu}"
-    class="menu bg-black w-full h-12 z-40 flex absolute"
+    class="menu bg-black w-full h-12 z-40 flex fixed"
   >
     <!-- Logomark -->
     <nuxt-link to="/">
