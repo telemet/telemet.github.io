@@ -10,7 +10,7 @@
     >
       <div>
         <AppCounter
-          v-scroll-to="{element: '#join', duration: 1222, offset: 0}"
+          v-scroll-to="{element: '#people', duration: 1222, offset: 0}"
           class="py-4"
         />
         <h1 v-scroll-to="'#people'" class="text-center text-4xl cursor-pointer">
@@ -56,14 +56,14 @@
         <hr class="my-10 border-gray-600" />
         <p class="">
           בשלב זה ההרשמה למערכה לשחרור העם מתבצעת ע״י הזמנה אישית בלבד. <br />
-          לפרטים וקבלת הזמנה הצטרפו לקבוצה של
+          לפרטים נוספים לחצו כאן
           <a
             href="https://www.facebook.com/groups/telemetISR"
             target="_blank"
             class=""
-            >טלאמת</a
+            >לחצו כאן</a
           >
-          בפייסבוק.
+          .
         </p>
         <AppForm />
       </div>
