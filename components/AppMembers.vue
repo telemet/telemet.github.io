@@ -3,11 +3,15 @@
     <li
       v-for="(value, index) in users"
       :key="index"
-      class="inline-block px-2 py-1 text-lg hover:text-red-700 cursor-default"
+      class="px-2 py-1 hover:bg-red-700 hover:text-white rounded m-1 inline-block text-lg cursor-pointer group transition-all duration-1000 hover:duration-200 ease-in-out"
     >
       <span class="">{{ value[1] }}</span>
       <span class="">{{ value[2] }}</span>
-      <span class="hidden">{{ value[3] }}</span>
+      <span
+        class="font-bold text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        ><span class="font-normal text-red-300 mx-01">|</span>
+        {{ value[3] }}</span
+      >
       <!-- <span class="score-farts">{{ value[2] }}</span> -->
     </li>
   </ul>
