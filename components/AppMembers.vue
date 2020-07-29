@@ -7,6 +7,7 @@
     >
       <span class="">{{ value[1] }}</span>
       <span class="">{{ value[2] }}</span>
+      <span class="hidden">{{ value[3] }}</span>
       <!-- <span class="score-farts">{{ value[2] }}</span> -->
     </li>
   </ul>
@@ -31,7 +32,7 @@ export default {
     return {
       users: '',
       api:
-        'https://sheets.googleapis.com/v4/spreadsheets/1gwIzncB37WScVHQgI8P2uEqj1QYGS0JrS4tM7PzQgxQ/values/vars!A1:C?key=AIzaSyCzDCILqQpcc1wCKmAvTsiQ98UhQA9VX9g',
+        'https://sheets.googleapis.com/v4/spreadsheets/1gwIzncB37WScVHQgI8P2uEqj1QYGS0JrS4tM7PzQgxQ/values/vars!A1:D?key=AIzaSyCzDCILqQpcc1wCKmAvTsiQ98UhQA9VX9g',
       dataReady: false
     }
   },

@@ -1,9 +1,26 @@
 <template lang="html">
   <div class="app-social">
     <a
+      href="https://github.com/telemet/telemet"
+      target="_blank"
+      class="wrapper"
+      title="Github"
+    >
+      <icon
+        class="icon-github"
+        icon-name="icon-github"
+        width="16px"
+        height="16px"
+        icon-color="transperant"
+      >
+        <IconGithub />
+      </icon>
+    </a>
+    <a
       href="https://www.youtube.com/channel/UCoLvL_pRexyH31iD1kHVacA"
       target="_blank"
       class="wrapper"
+      title="YouTube"
     >
       <icon
         class="icon-youtube"
@@ -20,6 +37,7 @@
       target="_blank"
       rel="noreferrer"
       class="wrapper"
+      title="Telegram"
     >
       <icon
         class="icon-telegram"
@@ -36,6 +54,7 @@
       target="_blank"
       rel="noreferrer"
       class="wrapper"
+      title="Facebook"
     >
       <icon
         class="icon-facebook"
@@ -53,6 +72,7 @@
 <script>
 import Icon from '@/components/icons/Icon'
 import IconFacebook from '@/components/icons/IconFacebook'
+import IconGithub from '@/components/icons/IconGithub'
 import IconTelegram from '@/components/icons/IconTelegram'
 import IconYoutube from '@/components/icons/IconYoutube'
 
@@ -60,6 +80,7 @@ export default {
   components: {
     Icon,
     IconFacebook,
+    IconGithub,
     IconTelegram,
     IconYoutube
   }
@@ -68,16 +89,15 @@ export default {
 
 <style scoped lang="postcss">
 svg {
-  @apply fill-current text-gray-500;
+  @apply fill-current text-gray-600 w-4 h-4;
 }
 .wrapper {
-  @apply inline-block p-032 border-2 border-gray-500 -ml-021;
+  @apply inline-block p-032 mx-01 rounded cursor-pointer;
 }
 .app-social {
-  @apply leading-nan overflow-hidden cursor-pointer select-none;
+  @apply leading-nan overflow-hidden select-none;
   &:hover {
     & .wrapper {
-      @apply border-2 border-red-700;
       &:hover {
         @apply bg-red-700;
         & svg g {
@@ -85,9 +105,9 @@ svg {
         }
       }
     }
-    & svg g {
+    /* & svg g {
       @apply fill-current text-red-700;
-    }
+    } */
   }
 }
 </style>

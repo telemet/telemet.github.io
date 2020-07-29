@@ -5,23 +5,25 @@
 
     <!-- Counter -->
     <section id="main" class="">
-      <div class="text-center  w-80 px-4 mx-auto bg-gray-700 py-4 rounded-lg">
-        <h1 class="text-6xl font-bold text-red-700">
+      <div
+        class="text-center mx-auto bg-gray-800 rounded-lg border border-gray-700"
+      >
+        <h1 class="text-6xl font-bold text-red-700 mt-4">
           תודה
         </h1>
 
-        <p class="text-gray-100 text-3xl">
+        <p class="text-gray-100 text-3xl mx-4 px-4">
           בקשתך נשלחה בהצלחה
         </p>
-        <p class="text-gray-300 mt-6">
+        <p class="w-80 mx-auto text-gray-300 mt-6 px-4">
           פרטים נוספים והוראות לקידום המערכה יישלחו לכתובת הדוא״ל איתו נרשמת תוך
           24-48 שעות.
         </p>
-        <hr class="my-8 block border-gray-600" />
-        <div class="">
+        <hr class="mt-8 block border-gray-600" />
+        <div class="bg-gray-700">
           <NuxtLink to="/#join">
             <app-button
-              class="btn btn-sm btn-red mx-auto mt-1 mb-6"
+              class="btn btn-sm btn-red mx-auto my-10"
               title="לדף הבית"
             />
           </NuxtLink>
