@@ -56,13 +56,8 @@
         <hr class="my-10 border-gray-600" />
         <p class="">
           בשלב זה ההרשמה למערכה לשחרור העם מתבצעת ע״י הזמנה אישית בלבד. <br />
-          לפרטים נוספים לחצו כאן
-          <a
-            href="https://www.facebook.com/groups/telemetISR"
-            target="_blank"
-            class=""
-            >לחצו כאן</a
-          >
+          לפרטים נוספים
+          <NuxtLink to="/t/tal.amitay/unity" class="">לחצו כאן</NuxtLink>
           .
         </p>
         <AppForm />

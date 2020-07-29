@@ -39,7 +39,7 @@
 
       <!-- Post Image -->
       <img
-        :src="'../' + post.img"
+        :src="imgUrl(post.img)"
         :alt="post.alt"
         class="mt-3 block w-full h-full object-cover rounded-lg"
       />
@@ -111,7 +111,7 @@ export default {
   },
   // data() {
   //   return {
-  //     showText: this.formatDate(post.createdAt)
+  //     postImg: this.post.img
   //   }
   // },
   methods: {
@@ -126,6 +126,15 @@ export default {
     },
     copyValue() {
       return 'telemet.org/t/' + this.post.author.name + '/' + this.post.slug
+    },
+    // Check if path is absolute or relative
+    imgUrl(url) {
+      const pat = /^https?:\/\//i
+      if (pat.test(url)) {
+        return url
+      } else {
+        return '../' + url
+      }
     }
   }
 }

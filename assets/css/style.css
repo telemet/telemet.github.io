@@ -6,15 +6,12 @@ p a {
     @apply text-white;
   }
   &:focus {
-    @apply shadow-outline outline-none rounded-lg;
+    @apply bg-red-600 text-white;
   }
 }
 
-.focus {
+:focus {
   @apply outline-none;
-  &:focus {
-    @apply shadow-outline outline-none rounded;
-  }
 }
 
 /* Transitions */
