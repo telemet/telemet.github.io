@@ -1,11 +1,11 @@
 <template lang="html">
   <!-- Wrapper -->
   <div class="min-h-screen mx-auto">
-    <AppPoster poster="telemet-hands" />
+    <AppPoster poster="telemet-balfur3" />
 
     <!-- Counter -->
     <section id="main" class="">
-      <div class="text-center">
+      <div class="text-center  w-80 px-4 mx-auto bg-gray-700 py-4 rounded-lg">
         <h1 class="text-6xl font-bold text-red-700">
           תודה
         </h1>
@@ -13,14 +13,17 @@
         <p class="text-gray-100 text-3xl">
           בקשתך נשלחה בהצלחה
         </p>
-        <p class="max-w-screen-sm px-10 mx-auto text-gray-300 mt-6">
+        <p class="text-gray-300 mt-6">
           פרטים נוספים והוראות לקידום המערכה יישלחו לכתובת הדוא״ל איתו נרשמת תוך
-          24-48 שעות. עד אז, אם יש לך רעיונות משלך לקידום המערכה, הצטרף/י לשיחה
-          בפייסבוק .
+          24-48 שעות.
         </p>
+        <hr class="my-8 block border-gray-600" />
         <div class="">
           <NuxtLink to="/#join">
-            <app-button class="btn btn-red mx-auto mt-10" title="להרשמה" />
+            <app-button
+              class="btn btn-sm btn-red mx-auto mt-1 mb-6"
+              title="לדף הבית"
+            />
           </NuxtLink>
         </div>
       </div>
@@ -29,13 +32,13 @@
 </template>
 
 <script>
-import AppButton from '~/components/AppButton'
+// import AppButton from '~/components/AppButton'
 import AppPoster from '@/components/AppPoster'
 
 export default {
   name: 'Home',
   components: {
-    AppButton,
+    // AppButton,
     AppPoster
   },
   data() {

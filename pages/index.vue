@@ -23,7 +23,7 @@
         <div class="mt-10 text-center">
           <AppButton
             v-scroll-to="{element: '#join', duration: 1222, offset: 0}"
-            class="btn btn-red mx-auto focus"
+            class="btn btn-lg btn-red mx-auto focus"
             title="להרשמה"
           />
           <div class="clearfix" />

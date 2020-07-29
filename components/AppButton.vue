@@ -29,8 +29,15 @@ export default {
 
 <style lang="postcss">
 .btn {
-  @apply font-bold py-4 px-12 inline-block rounded-full text-2xl leading-none;
+  @apply font-bold inline-block rounded-full leading-none;
+  &.btn-lg {
+    @apply py-4 px-12 text-2xl;
+  }
+  &.btn-sm {
+    @apply py-4 px-8 text-xl;
+  }
 }
+
 .btn span {
   @apply block -mt-1;
 }
