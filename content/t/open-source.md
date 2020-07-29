@@ -1,13 +1,13 @@
 ---
 title: קוד פתוח
 description: אנחנו אוהבים קוד פתוח וגם לכם כדאי.
-img: img/telemet-open-source.jpg
+img: img/telemet-open-source2.jpg
 alt: קוד פתוח
 author: 
   img: tal-amitay.jpg
   name: tal.amitay
   hname: טל אמיתי
-  bio: "שחקן במשחק החיים, וולונטריסט ערני, איש טכנולוגיה, ידע, מדעים ואומנויות. עושה את העבודה הגדולה, מבין חופשי ומסור לאמת האחת."
+  bio: "וולונטריסט ערני, איש טכנולוגיה, ידע, מדעים ואומנויות. עושה את העבודה הגדולה, מבין חופשי ומסור לאמת האחת."
 ---
 
 ממשק טלאמת בגרסתו הנוכחית, כקודמיו, פותח ע״י שימוש בטכנולוגיות קוד פתוח/חופשי. קוד פתוח משמש בעולם התוכנה לציון תוכנה שמקור הקוד שלה פתוח ונגיש לכל מי שחפץ בו והוא חופשי לשימוש, לצפייה, לעריכת שינויים ולהפצה מחודשת לכל אחד ואחת. שיטת פיתוח כזו מאפשרת בעצם לכל מי שחפץ בכך לקחת חלק בפיתוח התוכנה ולתרום לשיפורה [^1].
@@ -23,6 +23,7 @@ author:
 - [Nuxt JS](https://nuxtjs.org/)
 - [Vue JS](https://vuejs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Node JS](https://nodejs.org/)
 - [Babel JS](https://babeljs.io/)
 - [ESLint](https://eslint.org/)
 - [Axios](https://github.com/axios/axios)

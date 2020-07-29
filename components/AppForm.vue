@@ -77,7 +77,7 @@
             class="btn btn-red mx-auto "
             title="שלח/י"
           />
-          <span class="text-sm mt-4 block text-gray-400"
+          <span class="text-sm mt-4 block text-gray-500"
             >כתובות דוא״ל נשארות חסויות ולעולם לא יפורסמו.</span
           >
         </div>

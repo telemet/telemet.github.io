@@ -13,7 +13,7 @@
         </h1>
 
         <p
-          class="mb-0 mt-2 text-sm md:text-base text-center text-gray-400 tracking-wider"
+          class="mb-0 mt-2 text-sm md:text-base text-center text-gray-400 tracking-wider mx-auto max-w-lg"
         >
           {{ t[0].author.bio }}
         </p>
@@ -29,14 +29,21 @@
         >
           <NuxtLink
             :to="{name: 't-author-slug', params: {slug: post.slug}}"
-            class="text-gray-400 hover:text-white transition-colors duration-100 ease-in-out block"
+            class="text-gray-400 hover:text-white transition-colors duration-100 ease-in-out block group"
           >
             <!-- <img :src="`../${post.img}`" :alt="post.alt" /> -->
             <div class="flex py-4 px-4">
               <h2 class="flex-1">{{ post.title }}</h2>
               <!-- <p>{{ post.description }}</p> -->
               <p class="text-base md:text-lg self-center">
-                {{ formatDate(post.createdAt) }}
+                <!-- {{ formatDate(post.createdAt) }} -->
+                <icon
+                  :icon-color="'transperant'"
+                  class="w-4 h-4 self-center text-gray-700 group-hover:text-gray-500 fill-current cursor-pointer trans-100"
+                  icon-name="Share"
+                >
+                  <IconLink />
+                </icon>
               </p>
             </div>
           </NuxtLink>
@@ -47,7 +54,14 @@
 </template>
 
 <script>
+import Icon from '@/components/icons/Icon'
+import IconLink from '@/components/icons/IconLink'
+
 export default {
+  components: {
+    Icon,
+    IconLink
+  },
   async asyncData({$content, params}) {
     const t = await $content('t', params.slug)
       .where({

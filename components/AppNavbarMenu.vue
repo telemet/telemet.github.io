@@ -7,9 +7,10 @@
     >
       <Elipses />
     </icon>
+    <!-- v-show="isOpen" -->
     <ul
-      v-show="isOpen"
-      class="dropdown mt-1 w-36 min-w-full rounded-md bg-red-700 shadow-lg"
+      :class="{active: isOpen}"
+      class="dropdown mt-1 w-36 min-w-full rounded-md bg-red-700 shadow-lg opacity-0 transition-opacity duration-200 ease-in-out scale-0"
     >
       <li><nuxt-link to="/t/tal.amitay/unity">אודות</nuxt-link></li>
       <!-- <li><a href="https://t.me/telemetISR" target="blank">טלגרם</a></li>
@@ -81,6 +82,9 @@ export default {
   }
   .nuxt-link-exact-active {
     background: darken($red, 5);
+  }
+  &.active {
+    @apply scale-100 opacity-100 transition-opacity duration-100 ease-in-out;
   }
 }
 </style>

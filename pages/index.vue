@@ -14,7 +14,7 @@
           class="py-4"
         />
         <h1 v-scroll-to="'#people'" class="text-center text-4xl cursor-pointer">
-          <span class="font-bold pl-2">#כולנו</span>
+          <span class="font-bold pl-2 text-gray-100">#כולנו</span>
           <span class="divider text-gray-400">|</span>
           <span class="text-gray-400 pr-2">
             מתאגדים ונערכים לשחרור העם
@@ -29,7 +29,7 @@
           <div class="clearfix" />
           <NuxtLink
             to="/t/tal.amitay/unity"
-            class="mx-auto mt-2 inline-block text-gray-500 hover:text-gray-100 trans-100 focus"
+            class="mx-auto mt-2 inline-block text-gray-400 hover:text-gray-100 trans-100 focus"
             >איך משיגים חופש?</NuxtLink
           >
         </div>
@@ -41,7 +41,7 @@
         <h3 class="text-red-700 font-bold text-5xl tracking-wide">
           הכוח של האנשים
         </h3>
-        <p class="font-normal text-2xl tracking-wider">
+        <p class="font-normal text-2xl tracking-wider text-white">
           גדול בהרבה מהאנשים עם הכוח
         </p>
         <hr class="my-10 border-gray-600" />
@@ -52,7 +52,9 @@
     <section id="join" class="">
       <div class="container text-center p-10">
         <h3 class="text-red-700 font-bold text-5xl tracking-wide">הרשמה</h3>
-        <p class="font-normal text-2xl tracking-wider">למערכה לשחרור העם</p>
+        <p class="font-normal text-2xl text-white tracking-wider">
+          למערכה לשחרור העם
+        </p>
         <hr class="my-10 border-gray-600" />
         <p class="">
           בשלב זה ההרשמה למערכה לשחרור העם מתבצעת ע״י הזמנה אישית בלבד. <br />
