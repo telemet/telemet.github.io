@@ -21,7 +21,7 @@
         </p>
         <hr class="mt-8 block border-gray-600" />
         <div class="bg-gray-700">
-          <NuxtLink to="/#join">
+          <NuxtLink to="/">
             <app-button
               class="btn btn-sm btn-red mx-auto my-10"
               title="לדף הבית"

@@ -13,7 +13,10 @@
           v-scroll-to="{element: '#people', duration: 1222, offset: 0}"
           class="py-4"
         />
-        <h1 v-scroll-to="'#people'" class="text-center text-4xl cursor-pointer">
+        <h1
+          v-scroll-to="'#people'"
+          class="text-center text-3xl md:text-4xl cursor-pointer"
+        >
           <span class="font-bold pl-2 text-gray-100">#כולנו</span>
           <span class="divider text-gray-400">|</span>
           <span class="text-gray-400 pr-2">
@@ -29,7 +32,7 @@
           <div class="clearfix" />
           <NuxtLink
             to="/t/tal.amitay/unity"
-            class="mx-auto mt-2 inline-block text-gray-400 hover:text-gray-100 trans-100 focus"
+            class="mx-auto text-sm md:text-base mt-2 inline-block text-gray-400 hover:text-gray-100 trans-100 focus"
             >איך משיגים חופש?</NuxtLink
           >
         </div>

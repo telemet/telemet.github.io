@@ -38,8 +38,9 @@
       </div>
 
       <!-- Post Image -->
+      <!-- :src="imgUrl(post.img)" -->
       <img
-        :src="imgUrl(post.img)"
+        :src="post.img"
         :alt="post.alt"
         class="mt-3 block w-full h-full object-cover rounded-lg"
       />
@@ -126,16 +127,16 @@ export default {
     },
     copyValue() {
       return 'telemet.org/t/' + this.post.author.name + '/' + this.post.slug
-    },
-    // Check if path is absolute or relative
-    imgUrl(url) {
-      const pat = /^https?:\/\//i
-      if (pat.test(url)) {
-        return url
-      } else {
-        return '../' + url
-      }
     }
+    // Check if path is absolute or relative
+    // imgUrl(url) {
+    //   const pat = /^https?:\/\//i
+    //   if (pat.test(url)) {
+    //     return url
+    //   } else {
+    //     return '../' + url
+    //   }
+    // }
   }
 }
 </script>
@@ -213,10 +214,13 @@ export default {
         @screen md {
           @apply ml-4;
         }
-        /* content: counter(my-counter) '. '; */
-        /* color: red; */
-        /* font-weight: bold; */
       }
+    }
+  }
+  & hr {
+    @apply border-gray-700 block mt-16 mb-8;
+    & + p {
+      @apply text-xl;
     }
   }
   /* & table {

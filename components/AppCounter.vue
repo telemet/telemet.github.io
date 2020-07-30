@@ -5,7 +5,7 @@
       :format-value="formatNumber"
       :delay="0"
       :duration="duration"
-      class="text-red-700 hover:text-red-600 font-bold text-14xl leading-none tracking-tight"
+      class="text-red-700 hover:text-red-600 font-bold text-12xl md:text-14xl leading-none tracking-tight"
       easing="easeOutCirc"
     />
   </div>

@@ -31,7 +31,10 @@ export default {
 .btn {
   @apply font-bold inline-block rounded-full leading-none;
   &.btn-lg {
-    @apply py-4 px-12 text-2xl;
+    @apply py-4 px-8 text-xl;
+    @screen md {
+      @apply py-4 px-12 text-2xl;
+    }
   }
   &.btn-sm {
     @apply py-4 px-8 text-xl;

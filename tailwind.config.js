@@ -331,6 +331,7 @@ module.exports = {
       '5xl': '3rem',
       '6xl': '4rem',
       '8xl': '6rem',
+      '12xl': '10rem',
       '14xl': '12rem'
     },
     // font

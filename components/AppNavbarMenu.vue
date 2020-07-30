@@ -9,7 +9,7 @@
     </icon>
     <!-- v-show="isOpen" -->
     <ul
-      :class="{active: isOpen}"
+      :class="{active: isOpen, hidden: !isOpen}"
       class="dropdown mt-1 w-36 min-w-full rounded-md bg-red-700 shadow-lg opacity-0 transition-opacity duration-200 ease-in-out scale-0"
     >
       <li><nuxt-link to="/t/tal.amitay/unity">אודות</nuxt-link></li>
