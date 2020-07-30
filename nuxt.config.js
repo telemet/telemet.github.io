@@ -175,6 +175,7 @@ export default {
   generate: {fallback: '404.html'},
   components: true,
   content: {
+    liveEdit: false,
     nestedProperties: ['author.name']
   },
   /*

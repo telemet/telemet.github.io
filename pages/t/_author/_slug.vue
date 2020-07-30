@@ -183,13 +183,10 @@ export default {
       @apply px-4 my-8 text-xl;
     }
     & li {
-      @apply list-none text-gray-400;
-      &:hover {
-        @apply text-white;
-      }
+      @apply list-none;
       &::before {
         @apply ml-3 text-red-500 font-bold;
-        content: '•';
+        content: '+';
         @screen md {
           @apply ml-4;
         }

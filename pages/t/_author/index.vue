@@ -3,27 +3,29 @@
     <div class="container mx-auto py-10 px-6 max-w-screen-md">
       <div class="my-8 bg-gray-800 py-4 md:py-6 px-8 rounded-lg">
         <img
-          :src="`/t/authors/${t[0].author.img}`"
+          :src="`/t/authors/${posts[0].author.img}`"
           class="w-20 h-20 md:w-24 md:h-24 rounded-full mx-auto"
         />
         <h1
           class="text-4xl md:text-5xl mt-2 md:mt-4 font-bold text-red-600 leading-snug text-center block"
         >
-          {{ t[0].author.hname }}
+          {{ posts[0].author.hname }}
         </h1>
 
         <p
           class="mb-0 mt-2 text-sm md:text-base text-center text-gray-400 tracking-wider mx-auto max-w-lg"
         >
-          {{ t[0].author.bio }}
+          {{ posts[0].author.bio }}
         </p>
       </div>
 
-      <h3 class="text-gray-500">רשימת מאמרים מאת {{ t[0].author.hname }}:</h3>
+      <h3 class="text-gray-500">
+        רשימת מאמרים מאת {{ posts[0].author.hname }}:
+      </h3>
       <!-- <hr /> -->
       <ul>
         <li
-          v-for="post in t"
+          v-for="post in posts"
           :key="post.slug"
           class="my-2 text-lg md:text-xl tracking-wide bg-gray-700 hover:bg-gray-600 rounded-md transition-colors duration-100 ease-in-out"
         >
@@ -63,7 +65,7 @@ export default {
     IconLink
   },
   async asyncData({$content, params}) {
-    const t = await $content('t', params.slug)
+    const posts = await $content('t', params.slug)
       .where({
         'author.name': {
           $regex: [params.author, 'i']
@@ -74,7 +76,7 @@ export default {
       .fetch()
 
     return {
-      t
+      posts
     }
   },
   methods: {

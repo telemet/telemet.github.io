@@ -9,7 +9,9 @@
       <ul class="mt-8">
         <li v-for="post of posts" :key="post.slug" class="">
           <NuxtLink
-            :to="{path: 't/', name: 't-slug', params: {slug: post.slug}}"
+            :to="{
+              path: post.author.name + '/' + post.slug
+            }"
             class="my-4 px-2 py-4 bg-gray-800 hover:bg-gray-700 rounded-lg block transition-colors duration-150 ease-in-out"
           >
             <!-- <img
@@ -22,7 +24,7 @@
               >
                 {{ post.title }}
               </h2>
-              <p class="mb-2 text-gray-100">מאת {{ post.author.name }}</p>
+              <p class="mb-2 text-gray-100">מאת {{ post.author.hname }}</p>
               <p class="text-xl text-gray-500">{{ post.description }}</p>
             </div>
           </NuxtLink>
