@@ -1,4 +1,4 @@
-<a href="https://telemet.org"><p align="center"><img width="100px" src="https://github.com/telemet/telemet/blob/master/static/images/telemet-logo.png˘"></p></a>
+<a href="https://telemet.org"><p align="center"><img width="100px" src="https://raw.githubusercontent.com/telemet/telemet/master/static/images/telemet-logo.png˘"></p></a>
 
 <i><p align="center">"In a time of universal deceit telling the truth Is a revolutionary act" *~George Orwell*</p></i>
 
