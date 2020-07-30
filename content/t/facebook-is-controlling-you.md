@@ -1,7 +1,7 @@
 ---
 title: שליטה מחשבתית בפייסבוק
 description: אנו נמצאים בנקודה בה הכלים בהם אנו בוחרים להשתמש קורעים את המרקם החברתי בו החברה פועלת
-img: https:/telemet.org/t/img/telemet-finger.jpg
+img: ../img/telemet-finger.jpg
 alt: פייסבוק שולט בך
 author:
   img: tal-amitay.jpg

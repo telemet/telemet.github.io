@@ -1,7 +1,7 @@
 ---
 title: קוד פתוח
 description: אנחנו אוהבים קוד פתוח וגם לכם כדאי.
-img: https:/telemet.org/t/img/telemet-open-source2.jpg
+img: ../img/telemet-open-source2.jpg
 alt: קוד פתוח
 author: 
   img: tal-amitay.jpg
