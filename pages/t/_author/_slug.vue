@@ -200,7 +200,10 @@ export default {
       @apply px-4 my-12 text-xl;
     }
     & li {
-      @apply flex my-4 text-gray-400;
+      & a {
+        /* @apply mx-1 flow-root; */
+      }
+      @apply my-4 text-gray-400;
       counter-increment: my-counter;
       @screen md {
         @apply my-6;
@@ -261,6 +264,10 @@ export default {
       }
     }
   }
+}
+
+.footnotes a {
+  @apply border-0;
 }
 .footnote-ref {
   @apply pr-01 font-sans border-0 text-red-600 font-bold text-xs;

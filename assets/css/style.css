@@ -1,6 +1,7 @@
 /* Base */
 
-p a {
+p a,
+li a {
   @apply border-red-600 border-b;
   &:hover {
     @apply text-white;
