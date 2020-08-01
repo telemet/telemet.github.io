@@ -93,6 +93,12 @@ svg {
 }
 .wrapper {
   @apply inline-block p-032 mx-01 rounded cursor-pointer;
+  &:focus {
+    @apply bg-red-700 text-white;
+    & svg g {
+      @apply fill-current text-white;
+    }
+  }
 }
 .app-social {
   @apply leading-nan overflow-hidden select-none;

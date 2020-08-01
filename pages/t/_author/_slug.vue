@@ -85,7 +85,7 @@
         "
         title="קישור עריכה"
         target="_blank"
-        class="transition-colors duration-100 ease-in-out bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white p-4 mt-4 mb-12 tracking-wider font-base rounded-lg block"
+        class="transition-colors duration-100 ease-in-out bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white p-4 mt-4 mb-12 tracking-wider font-base rounded-lg block focus"
       >
         <p>
           מצאת טעות או רוצה לתרום לעריכה? הקוד פתוח ב- GitHub
@@ -200,9 +200,6 @@ export default {
       @apply px-4 my-12 text-xl;
     }
     & li {
-      & a {
-        /* @apply mx-1 flow-root; */
-      }
       @apply my-4 text-gray-400;
       counter-increment: my-counter;
       @screen md {
