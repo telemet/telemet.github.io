@@ -110,6 +110,21 @@ export default {
 
     return {post}
   },
+  // async asyncData({params, error, $content}) {
+  //   try {
+  //     const postPath = `/t/${params.slug}`
+  //     const [post] = await $content({deep: true})
+  //       .where({dir: postPath})
+  //       .fetch()
+  //     return {post}
+  //   } catch (err) {
+  //     error({
+  //       statusCode: 404,
+  //       message: 'Page could not be found'
+  //     })
+  //   }
+  // },
+
   // data() {
   //   return {
   //     postImg: this.post.img
@@ -169,6 +184,12 @@ export default {
       @screen md {
         @apply my-12;
       }
+    }
+  }
+  & p > img {
+    @apply w-4/5 mx-auto mt-12;
+    @screen md {
+      @apply w-3/4 mx-auto mt-16;
     }
   }
   & blockquote p {

@@ -27,11 +27,11 @@
         <li
           v-for="post in posts"
           :key="post.slug"
-          class="my-2 text-lg md:text-xl tracking-wide bg-gray-700 hover:bg-gray-600 rounded-md transition-colors duration-100 ease-in-out"
+          class="my-02 text-lg md:text-xl tracking-wide"
         >
           <NuxtLink
             :to="{name: 't-author-slug', params: {slug: post.slug}}"
-            class="text-gray-400 hover:text-white transition-colors duration-100 ease-in-out block group border-0"
+            class="text-gray-400 hover:text-white block group border-0 rounded-md bg-gray-700 hover:bg-gray-600 transition-colors duration-100 ease-in-out"
           >
             <!-- <img :src="`../${post.img}`" :alt="post.alt" /> -->
             <div class="flex py-4 px-4">
@@ -72,7 +72,7 @@ export default {
         }
       })
       .without('body')
-      .sortBy('updatedAt', 'desc')
+      .sortBy('createdAt', 'desc')
       .fetch()
 
     return {

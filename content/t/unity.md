@@ -3,6 +3,7 @@ title: האיחוד 2.0
 description: כולנו מתאגדים ונערכים לשחרור העם
 img: ../img/telemet-blafur3.jpg
 alt: המערכה למען שחרור העם
+createdAt: 2020-07-31
 author:
   img: tal-amitay.jpg
   name: tal.amitay

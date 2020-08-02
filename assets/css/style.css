@@ -1,4 +1,7 @@
 /* Base */
+strong {
+  @apply text-gray-100;
+}
 
 p a,
 li a {
