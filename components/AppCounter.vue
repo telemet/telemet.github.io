@@ -1,7 +1,7 @@
 <template>
   <div class="counter text-center cursor-pointer">
     <animated-number
-      :value="381700"
+      :value="total"
       :format-value="formatNumber"
       :delay="0"
       :duration="duration"
