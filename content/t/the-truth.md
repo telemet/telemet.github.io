@@ -3,6 +3,7 @@ title: האמת
 description: האמת היא פשוט כל מה שקיים וכל מה שהיה קיים.
 img: ../img/telemet-truth.jpg
 alt: המערכה למען שחרור העם
+fbUrl: 1807451346062855
 createdAt: 2020-07-29
 author:
   img: tal-amitay.jpg

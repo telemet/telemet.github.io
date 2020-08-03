@@ -38,7 +38,6 @@
       </div>
 
       <!-- Post Image -->
-      <!-- :src="imgUrl(post.img)" -->
       <img
         :src="post.img"
         :alt="post.alt"
@@ -78,6 +77,20 @@
       <nuxt-content :document="post" class="content" />
 
       <a
+        v-if="post.fbUrl"
+        :href="
+          'https://www.facebook.com/groups/telemetISR/permalink/' + post.fbUrl
+        "
+        title="קישור עריכה"
+        target="_blank"
+        class="transition-colors duration-100 ease-in-out bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white p-3 md:p-4 mt-12 mb-0 tracking-wider text-sm md:text-base rounded-lg block focus"
+      >
+        <p>
+          רוצה להגיב? התחברו לקבוצת טלאֱמֶת ב- Facebbok
+        </p>
+      </a>
+
+      <a
         :href="
           'https://github.com/telemet/telemet/blob/master/content/t/' +
             post.slug +
@@ -85,7 +98,7 @@
         "
         title="קישור עריכה"
         target="_blank"
-        class="transition-colors duration-100 ease-in-out bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white p-4 mt-4 mb-12 tracking-wider font-base rounded-lg block focus"
+        class="transition-colors duration-100 ease-in-out bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white p-3 md:p-4 mt-2 mb-12 tracking-wider text-sm md:text-base rounded-lg block focus"
       >
         <p>
           מצאת טעות או רוצה לתרום לעריכה? הקוד פתוח ב- GitHub
@@ -110,26 +123,6 @@ export default {
 
     return {post}
   },
-  // async asyncData({params, error, $content}) {
-  //   try {
-  //     const postPath = `/t/${params.slug}`
-  //     const [post] = await $content({deep: true})
-  //       .where({dir: postPath})
-  //       .fetch()
-  //     return {post}
-  //   } catch (err) {
-  //     error({
-  //       statusCode: 404,
-  //       message: 'Page could not be found'
-  //     })
-  //   }
-  // },
-
-  // data() {
-  //   return {
-  //     postImg: this.post.img
-  //   }
-  // },
   methods: {
     formatDate(date) {
       const options = {year: 'numeric', month: 'long', day: 'numeric'}
@@ -143,15 +136,38 @@ export default {
     copyValue() {
       return 'telemet.org/t/' + this.post.author.name + '/' + this.post.slug
     }
-    // Check if path is absolute or relative
-    // imgUrl(url) {
-    //   const pat = /^https?:\/\//i
-    //   if (pat.test(url)) {
-    //     return url
-    //   } else {
-    //     return '../' + url
-    //   }
-    // }
+  },
+  head() {
+    return {
+      title: this.post.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.post.description
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.post.title
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.post.description
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.post.title
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.post.description
+        }
+      ]
+    }
   }
 }
 </script>
@@ -170,9 +186,6 @@ export default {
     @screen md {
       @apply mt-10 text-3xl;
     }
-    /* & + p {
-      @apply mt-4;
-    } */
   }
   & p {
     @apply text-gray-400 my-4 text-xl;
@@ -193,7 +206,7 @@ export default {
     }
   }
   & blockquote p {
-    @apply pr-4 py-2 my-8 text-xl text-gray-400 border-r-4 border-red-600 tracking-wider font-bold;
+    @apply pr-4 py-2 my-8 text-xl text-gray-200 border-r-4 border-red-600 tracking-wider font-bold;
     @screen md {
       @apply pr-6 py-3 my-12 text-2xl border-r-8;
     }
