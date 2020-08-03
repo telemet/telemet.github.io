@@ -12,7 +12,7 @@
             :to="{
               path: post.author.name + '/' + post.slug
             }"
-            class="my-4 px-2 py-4 bg-gray-800 hover:bg-gray-700 rounded-lg block transition-colors duration-150 ease-in-out"
+            class="my-4 px-2 py-4 bg-gray-800 hover:bg-gray-700 border-0 rounded-lg block transition-colors duration-150 ease-in-out"
           >
             <!-- <img
               :src="post.img"
@@ -31,6 +31,7 @@
         </li>
       </ul>
     </div>
+    <!-- <pre class> {{ posts }} </pre> -->
   </div>
 </template>
 

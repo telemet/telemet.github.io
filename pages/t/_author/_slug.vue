@@ -162,13 +162,13 @@ export default {
   & h2 {
     @apply mt-12 text-3xl text-red-600 font-bold;
     @screen md {
-      @apply mt-16 text-4xl;
+      @apply mt-14 text-4xl;
     }
   }
   & h3 {
     @apply mt-12 text-2xl text-red-600 font-bold;
     @screen md {
-      @apply mt-10;
+      @apply mt-10 text-3xl;
     }
     /* & + p {
       @apply mt-4;
@@ -182,7 +182,7 @@ export default {
     & img {
       @apply my-10 rounded-lg;
       @screen md {
-        @apply my-12;
+        @apply my-16;
       }
     }
   }
