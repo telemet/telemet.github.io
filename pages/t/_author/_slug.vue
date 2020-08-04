@@ -86,7 +86,7 @@
         class="transition-colors duration-100 ease-in-out bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white p-3 md:p-4 mt-12 mb-0 tracking-wider text-sm md:text-base rounded-lg block focus"
       >
         <p>
-          רוצה להגיב? התחברו לקבוצת טלאֱמֶת ב- Facebbok
+          רוצה להגיב? התחברו לקבוצת טלאֱמֶת ב- Facebook
         </p>
       </a>
 
