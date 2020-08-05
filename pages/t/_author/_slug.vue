@@ -157,6 +157,11 @@ export default {
           content: this.post.description
         },
         {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.post.img
+        },
+        {
           hid: 'twitter:title',
           name: 'twitter:title',
           content: this.post.title
@@ -165,6 +170,11 @@ export default {
           hid: 'twitter:description',
           name: 'twitter:description',
           content: this.post.description
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: this.post.img
         }
       ]
     }

@@ -3,22 +3,24 @@ strong {
   @apply text-gray-100;
 }
 
+:focus {
+  @apply outline-none;
+}
+
 p a,
 li a {
   @apply border-red-600 border-b;
   &:hover {
     @apply text-white;
   }
-  &:focus {
+  &:focus,
+  &:active {
     @apply bg-red-600 text-white;
   }
 }
 
-:focus {
-  @apply outline-none;
-}
-
-.focus:focus {
+.focus:focus,
+.focus:active {
   @apply bg-red-600 text-white;
 }
 

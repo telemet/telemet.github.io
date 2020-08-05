@@ -31,7 +31,7 @@
         >
           <NuxtLink
             :to="{name: 't-author-slug', params: {slug: post.slug}}"
-            class="text-gray-400 hover:text-white block group border-0 rounded-md bg-gray-700 hover:bg-gray-600 transition-colors duration-100 ease-in-out"
+            class="text-gray-400 hover:text-white block group border-0 rounded-md bg-gray-700 hover:bg-gray-600 transition-colors duration-100 ease-in-out focus"
           >
             <!-- <img :src="`../${post.img}`" :alt="post.alt" /> -->
             <div class="flex py-4 px-4">

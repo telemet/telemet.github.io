@@ -106,7 +106,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://telemet.org/images/telemet-poster-fb.jpg'
+        content: 'https://telemet.org/images/telemet-poster.jpg'
       },
       // Twitter
       {
@@ -132,7 +132,7 @@ export default {
       {
         hid: 'twitter:image',
         property: 'twitter:image',
-        content: 'https://telemet.org/images/telemet-poster-fb.jpg'
+        content: 'https://telemet.org/images/telemet-poster.jpg'
       }
     ],
     link: [
