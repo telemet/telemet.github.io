@@ -119,7 +119,7 @@ export default {
     IconLink
   },
   async asyncData({$content, params}) {
-    const post = await $content('t', params.slug).fetch()
+    const post = await $content('t', params.slug, {deep: true}).fetch()
 
     return {post}
   },

@@ -1,5 +1,7 @@
+import axios from 'axios'
+
 export default {
-  mode: 'spa',
+  mode: 'universal',
   target: 'static',
   /*
    ** Headers of the page

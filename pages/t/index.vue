@@ -10,7 +10,7 @@
         <li v-for="post of posts" :key="post.slug" class="">
           <NuxtLink
             :to="{
-              path: post.author.name + '/' + post.slug
+              path: '/t/' + post.author.name + '/' + post.slug
             }"
             class="my-4 px-2 py-4 bg-gray-800 hover:bg-gray-700 border-0 rounded-lg block transition-colors duration-150 ease-in-out"
           >
@@ -38,7 +38,7 @@
 <script>
 export default {
   async asyncData({$content, params}) {
-    const posts = await $content('t', params.slug)
+    const posts = await $content('t', params.slug, {deep: true})
       .only(['title', 'description', 'img', 'slug', 'author'])
       .sortBy('createdAt', 'desc')
       .fetch()

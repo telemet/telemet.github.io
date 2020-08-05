@@ -65,7 +65,7 @@ export default {
     IconLink
   },
   async asyncData({$content, params}) {
-    const posts = await $content('t', params.slug)
+    const posts = await $content('t', params.slug, {deep: true})
       .where({
         'author.name': {
           $regex: [params.author, 'i']
