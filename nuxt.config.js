@@ -76,96 +76,14 @@ export default {
   ],
   pwa: {
     manifest: {
-      // name: 'telemet',
-      lang: 'he',
-      theme_color: '#ffffff',
-      background_color: '#ffffff',
-      display: 'standalone'
+      lang: 'he'
     },
-    meta: [
-      {charset: 'utf-8'},
-      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description
-      },
-      // Open Graph / Facebook
-      {property: 'og:type', content: 'website'},
-      {hid: 'og:url', property: 'og:url', content: 'https://telemet.org'},
-      {
-        hid: 'og:title',
-        property: 'og:title',
-        content: 'טלאֱמֶת'
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content: process.env.npm_package_description
-      },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: 'https://telemet.org/images/telemet-poster.jpg'
-      },
-      // Twitter
-      {
-        hid: 'twitter:card',
-        property: 'twitter:card',
-        content: 'summary_large_image'
-      },
-      {
-        hid: 'twitter:url',
-        property: 'twitter:url',
-        content: 'https://telemet.org'
-      },
-      {
-        hid: 'twitter:title',
-        property: 'twitter:title',
-        content: 'טלאֱמֶת'
-      },
-      {
-        hid: 'twitter:description',
-        property: 'twitter:description',
-        content: process.env.npm_package_description
-      },
-      {
-        hid: 'twitter:image',
-        property: 'twitter:image',
-        content: 'https://telemet.org/images/telemet-poster.jpg'
-      }
-    ],
-    link: [
-      {
-        rel: 'apple-touch-icon',
-        sizes: '180x180',
-        href: '/apple-touch-icon.png'
-      },
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '32x32',
-        href: '/favicon-32x32.png'
-      },
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '16x16',
-        href: '/favicon-16x16.png'
-      },
-      {rel: 'manifest', href: '/site.webmanifest'},
-      {
-        rel: 'mask-icon',
-        type: 'image/png',
-        sizes: '16x16',
-        href: '/safari-pinned-tab.svg',
-        color: '#ff0528'
-      },
-      {name: 'apple-mobile-web-app-title', content: 'telemet'},
-      {name: 'application-name', content: 'telemet'},
-      {name: 'msapplication-TileColor', content: '#ff0528'},
-      {name: 'theme-color', content: '#ffffff'}
-    ]
+    meta: {
+      name: 'טלאֱמֶת',
+      lang: 'he',
+      ogHost: 'https://telemet.org',
+      ogImage: 'https://telemet.org/images/telemet-poster.jpg'
+    }
   },
   webfontloader: {
     google: {
