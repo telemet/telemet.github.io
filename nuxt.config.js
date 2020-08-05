@@ -1,5 +1,3 @@
-import axios from 'axios'
-
 export default {
   mode: 'spa',
   target: 'static',
