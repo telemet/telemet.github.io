@@ -9,9 +9,9 @@ strong {
 
 p a,
 li a {
-  @apply border-red-600 border-b;
+  @apply border-red-800 border-b;
   &:hover {
-    @apply text-white;
+    @apply text-white border-red-600;
   }
   &:focus,
   &:active {

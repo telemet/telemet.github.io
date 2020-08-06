@@ -93,8 +93,8 @@
 
       <a
         :href="
-          'https://github.com/telemet/telemet/blob/master/content/t/' +
-            post.slug +
+          'https://github.com/telemet/telemet/blob/master/content/' +
+            post.path +
             post.extension
         "
         title="קישור עריכה"
