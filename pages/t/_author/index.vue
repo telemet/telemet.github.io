@@ -30,7 +30,7 @@
           class="my-02 text-lg md:text-xl tracking-wide"
         >
           <NuxtLink
-            :to="{name: 't-author-slug', params: {slug: post.slug}}"
+            :to="post.path"
             class="text-gray-400 hover:text-white block group border-0 rounded-md bg-gray-700 hover:bg-gray-600 transition-colors duration-100 ease-in-out focus"
           >
             <!-- <img :src="`../${post.img}`" :alt="post.alt" /> -->
@@ -65,7 +65,7 @@ export default {
     IconLink
   },
   async asyncData({$content, params}) {
-    const posts = await $content('t', params.slug, {deep: true})
+    const posts = await $content(params.path, {deep: true})
       .where({
         'author.name': {
           $regex: [params.author, 'i']

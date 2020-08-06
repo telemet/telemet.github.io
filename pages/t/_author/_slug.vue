@@ -44,22 +44,6 @@
         class="mt-3 block w-full h-full object-cover rounded-lg"
       />
 
-      <!-- Post TOC -->
-      <!-- <nav>
-        <ul>
-          <li v-for="link of post.toc" :key="link.id">
-            <NuxtLink
-              :to="`#${link.id}`"
-              :class="{
-                'py-2': link.depth === 2,
-                'mr-2 pb-2': link.depth === 3
-              }"
-              >{{ link.text }}</NuxtLink
-            >
-          </li>
-        </ul>
-      </nav> -->
-
       <!-- Post Title -->
       <h1
         class="text-4xl md:text-5xl my-6 md:my-8 font-bold text-red-600 leading-snug block"
@@ -71,6 +55,23 @@
       <h2 class="text-2xl md:text-3xl tracking-wide text-white">
         {{ post.description }}
       </h2>
+
+      <!-- Post TOC -->
+      <!-- <nav>
+        <ul>
+          <li v-for="link of post.toc" :key="link.id">
+            <NuxtLink
+              v-scroll-to="`#${link.id}`"
+              :to="'#'"
+              :class="{
+                'py-2': link.depth === 2,
+                'mr-2 pb-2': link.depth === 3
+              }"
+              >{{ link.text }}</NuxtLink
+            >
+          </li>
+        </ul>
+      </nav> -->
 
       <!-- <hr class="mt-10 md:mt-12 border-gray-700" /> -->
 
@@ -119,7 +120,9 @@ export default {
     IconLink
   },
   async asyncData({$content, params}) {
-    const post = await $content('t', params.slug, {deep: true}).fetch()
+    const post = await $content('t', params.author, params.slug, {
+      deep: true
+    }).fetch()
 
     return {post}
   },
