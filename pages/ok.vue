@@ -4,7 +4,10 @@
     <AppPoster poster="telemet-balfur3" />
 
     <!-- Counter -->
-    <section id="main" class="">
+    <section
+      id="main"
+      class="fixed min-h-screen w-full flex flex-col items-center justify-center"
+    >
       <div
         class="text-center mx-auto bg-gray-800 rounded-lg border border-gray-700"
       >
@@ -107,8 +110,4 @@ export default {
 }
 </script>
 
-<style lang="postcss">
-section {
-  @apply relative min-h-screen w-full flex flex-col items-center justify-center;
-}
-</style>
+<style lang="postcss" scoped></style>

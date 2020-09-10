@@ -31,9 +31,9 @@ module.exports = {
       primary: {
         default: '#6342FF'
       },
-      secondary: {
-        default: '#0DCAC0'
-      },
+      // secondary: {
+      //   default: '#1ADC93'
+      // },
       // brand: {
       //   100: '#F6F7FB',
       //   200: '#ECEEF4',
@@ -66,7 +66,7 @@ module.exports = {
         700: '#FF0528',
         800: '#D60825',
         900: '#AA0000'
-      }
+      },
       // orange: {
       //   100: '#fffaf0',
       //   200: '#feebc8',
@@ -78,28 +78,28 @@ module.exports = {
       //   800: '#9c4221',
       //   900: '#7b341e',
       // },
-      // yellow: {
-      //   100: '#fffff0',
-      //   200: '#fefcbf',
-      //   300: '#faf089',
-      //   400: '#f6e05e',
-      //   500: '#ecc94b',
-      //   600: '#d69e2e',
-      //   700: '#b7791f',
-      //   800: '#975a16',
-      //   900: '#744210',
-      // },
-      // green: {
-      //   100: '#f0fff4',
-      //   200: '#c6f6d5',
-      //   300: '#9ae6b4',
-      //   400: '#68d391',
-      //   500: '#48bb78',
-      //   600: '#38a169',
-      //   700: '#2f855a',
-      //   800: '#276749',
-      //   900: '#22543d'
-      // },
+      yellow: {
+        // 100: '#fffff0',
+        // 200: '#fefcbf',
+        // 300: '#faf089',
+        // 400: '#f6e05e',
+        // 500: '#ecc94b',
+        600: '#FFF312'
+        // 700: '#b7791f',
+        // 800: '#975a16',
+        // 900: '#744210',
+      },
+      green: {
+        // 100: '#f0fff4',
+        // 200: '#c6f6d5',
+        // 300: '#9ae6b4',
+        // 400: '#68d391',
+        // 500: '#48bb78',
+        600: '#1ADC93'
+        // 700: '#2f855a',
+        // 800: '#276749',
+        // 900: '#22543d'
+      },
       // teal: {
       //   100: '#e6fffa',
       //   200: '#b2f5ea',
@@ -111,17 +111,17 @@ module.exports = {
       //   800: '#285e61',
       //   900: '#234e52'
       // },
-      // blue: {
-      //   100: '#ebf8ff',
-      //   200: '#bee3f8',
-      //   300: '#90cdf4',
-      //   400: '#63b3ed',
-      //   500: '#4299e1',
-      //   600: '#3182ce',
-      //   700: '#2b6cb0',
-      //   800: '#2c5282',
-      //   900: '#2a4365'
-      // },
+      blue: {
+        // 100: '#ebf8ff',
+        // 200: '#bee3f8',
+        // 300: '#90cdf4',
+        // 400: '#63b3ed',
+        // 500: '#4299e1',
+        600: '#0F82FD'
+        // 700: '#2b6cb0',
+        // 800: '#2c5282',
+        // 900: '#2a4365'
+      }
       // indigo: {
       //   100: '#ebf4ff',
       //   200: '#c3dafe',
@@ -167,10 +167,15 @@ module.exports = {
       '032': '0.6rem',
       '03': '0.675rem',
       '3': '0.75rem',
+      '04': '0.875rem',
       '4': '1rem',
+      '05': '1.125rem',
       '5': '1.25rem',
       '6': '1.5rem',
+      '7': '1.75rem',
       '8': '2rem',
+      '09': '2.125rem',
+      '9': '2.25rem',
       '10': '2.5rem',
       '12': '3rem',
       '13': '3.25rem',
@@ -192,7 +197,6 @@ module.exports = {
       '72': '18rem',
       '80': '20rem',
       '96': '24rem',
-      '2/3': '66.666667%',
       full: '100%'
     },
     backgroundColor: (theme) => theme('colors'),
@@ -245,7 +249,7 @@ module.exports = {
         '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
-      outline: '0 0 0 3px rgba(255, 40, 70, 1)',
+      outline: '0 0 0 2px rgba(255, 40, 70, 0.66)',
       none: 'none'
     },
     container: {},
@@ -329,10 +333,15 @@ module.exports = {
       '3xl': '1.875rem',
       '4xl': '2.25rem',
       '5xl': '3rem',
+      '06xl': '3.5rem',
       '6xl': '4rem',
       '8xl': '6rem',
+      '9xl': '7rem',
+      '10xl': '8rem',
+      '11xl': '9rem',
       '12xl': '10rem',
-      '14xl': '12rem'
+      '14xl': '12rem',
+      '18xl': '16rem'
     },
     // font
     fontWeight: {
@@ -354,7 +363,8 @@ module.exports = {
     }),
     inset: {
       '0': '0',
-      auto: 'auto'
+      auto: 'auto',
+      '14': '3.5rem'
     },
     letterSpacing: {
       tighter: '-0.05em',
@@ -437,6 +447,7 @@ module.exports = {
       '25': '0.25',
       '50': '0.5',
       '75': '0.75',
+      '90': '0.9',
       '100': '1'
     },
     order: {
@@ -695,12 +706,12 @@ module.exports = {
     alignSelf: ['responsive'],
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],
-    backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+    backgroundColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
     borderCollapse: ['responsive'],
-    borderColor: ['responsive', 'hover', 'focus'],
+    borderColor: ['responsive', 'hover', 'focus', 'group-hover'],
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
     borderWidth: ['responsive'],
@@ -793,5 +804,8 @@ module.exports = {
       'plugins/**/*.js',
       'nuxt.config.js'
     ]
+  },
+  future: {
+    removeDeprecatedGapUtilities: true
   }
 }

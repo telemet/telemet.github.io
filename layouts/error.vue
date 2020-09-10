@@ -1,10 +1,13 @@
 <template lang="html">
   <!-- Wrapper -->
   <div class="min-h-screen mx-auto">
-    <AppPoster poster="telemet-sheep" />
+    <!-- <AppPoster poster="telemet-sheep" /> -->
 
     <!-- Counter -->
-    <section id="main" class="">
+    <section
+      id="main"
+      class="fixed min-h-screen w-full flex flex-col items-center justify-center"
+    >
       <div class="text-center -mt-12">
         <NuxtLink to="/">
           <h1 class="text-14xl font-bold text-red-700">
@@ -27,13 +30,13 @@
 
 <script>
 // import AppButton from '~/components/AppButton'
-import AppPoster from '@/components/AppPoster'
+// import AppPoster from '@/components/AppPoster'
 
 export default {
   name: 'Home',
   components: {
     // AppButton,
-    AppPoster
+    // AppPoster
   },
   data() {
     return {
@@ -98,9 +101,3 @@ export default {
   }
 }
 </script>
-
-<style lang="postcss">
-section {
-  @apply relative min-h-screen w-full flex flex-col items-center justify-center;
-}
-</style>

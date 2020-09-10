@@ -28,7 +28,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{src: '~/plugins/vee-validate.js', mode: 'client'}],
+  plugins: [{src: '~/plugins/VeeValidate/vee-validate.js', mode: 'client'}],
   /*
    ** Nuxt.js dev-modules
    */
@@ -99,10 +99,18 @@ export default {
   /*
    ** Build configuration
    */
+  // build: {
+  //   /*
+  //    ** You can extend webpack config here
+  //    */
+  //   extend(config, ctx) {}
+  // }
   build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {}
+    extend(config, {isDev, isClient}) {
+      config.module.rules.push({
+        test: /\.md$/i,
+        loader: 'ignore-loader'
+      })
+    }
   }
 }

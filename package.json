@@ -12,26 +12,29 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@nuxt/content": "^1.5.3",
-    "@nuxtjs/axios": "^5.12.0",
-    "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxt/content": "^1.7.0",
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/pwa": "^3.0.2",
     "animated-number-vue": "^1.0.0",
-    "nuxt": "^2.14.0",
+    "nuxt": "^2.14.4",
     "nuxt-webfontloader": "^1.1.0",
     "tailwindcss-rtl": "^0.2.1",
-    "vee-validate": "^3.3.7",
-    "vue-scrollto": "^2.18.1"
+    "vee-validate": "^3.3.9",
+    "vue-parallaxy": "^1.1.1",
+    "vue-scrollto": "^2.18.2",
+    "vue-snap": "0.1.0-beta.9"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/google-analytics": "^2.2.3",
-    "@nuxtjs/tailwindcss": "^2.1.0",
+    "@nuxtjs/tailwindcss": "^2.1.1",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.1.2",
+    "ignore-loader": "^0.1.2",
     "prettier": "^1.19.1"
   }
 }

@@ -2,7 +2,7 @@
   <section
     id="poster"
     :style="{backgroundImage: 'url(\'' + imageTitle + '\')'}"
-    class="fixed h-screen top-0 w-full pt-12 bg-bottom bg-no-repeat"
+    class="fixed h-screen top-0 w-full mt-14 bg-top bg-no-repeat bg-fixed bg-cover"
   />
 </template>
 
@@ -11,13 +11,18 @@ export default {
   props: {
     poster: {
       type: String,
-      default: 'telemet-balfur3'
+      default: 'telemet-finger.jpg'
     }
   },
   computed: {
     imageTitle() {
-      return require('../assets/images/' + this.poster + '.jpg')
+      return require('../assets/images/' + this.poster)
     }
   }
 }
 </script>
+<style scoped lang="postcss">
+section {
+  height: calc(100vh - 3.5rem);
+}
+</style>

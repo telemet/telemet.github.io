@@ -1,34 +1,73 @@
 <template>
+  <!-- :class="{'menu--hidden': !showMenu}" -->
   <header
-    :class="{'menu--hidden': !showMenu}"
-    class="menu bg-black w-full h-12 z-40 flex fixed"
+    class="menu bg-gray-800 w-full h-14 z-40 flex items-center fixed justify-between flex-row-reverse border-b border-black"
   >
-    <!-- Logomark -->
-    <nuxt-link to="/">
-      <icon
-        :icon-color="'transperant'"
-        class="logomark absolute cursor-pointer w-6 h-6 left-0 mt-3 ml-5"
-        icon-name="Telemet"
-      >
-        <icon-logomark />
-      </icon>
+    <!-- Logotype -->
+    <nuxt-link to="/" class="cursor-pointer leading-none mx-6">
+      <AppLogomark class="h-09 w-09" />
     </nuxt-link>
 
-    <app-navbar-menu class="absolute right-0 mt-3 mr-5" />
+    <ul class="flex">
+      <li>
+        <NuxtLink
+          to="/t"
+          class="navbar-item w-18 h-9 mx-1 rounded bg-gray-800 group hover:bg-gray-600 flex justify-center items-center"
+        >
+          <icon
+            :icon-color="'transperant'"
+            class="icon fill-current w-6 h-6 text-gray-500 group-hover:text-white"
+            icon-name="Menu"
+          >
+            <IconUser />
+          </icon>
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink
+          to="/g"
+          class="navbar-item w-18 h-9 mx-1 rounded bg-gray-800 group hover:bg-gray-600 flex justify-center items-center"
+        >
+          <icon
+            :icon-color="'transperant'"
+            class="icon fill-current w-6 h-6 text-gray-500 group-hover:text-white"
+            icon-name="Menu"
+          >
+            <IconGroup />
+          </icon>
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink
+          to="/c"
+          class="navbar-item w-18 h-9 mx-1 rounded bg-gray-800 group hover:bg-gray-600 flex justify-center items-center"
+        >
+          <icon
+            :icon-color="'transperant'"
+            class="icon fill-current w-6 h-6 text-gray-500 group-hover:text-white"
+            icon-name="Menu"
+          >
+            <IconBolt />
+          </icon>
+        </NuxtLink>
+      </li>
+    </ul>
+    <div class="main mx-6 flex">
+      <app-navbar-menu class="" />
+      <NuxtLink
+        to="/join"
+        class="invisible md:visible absolute self-center flex justify-center items-center text-gray-400 hover:text-white bg-gray-800 hover:bg-red-600 border border-gray-600 hover:border-gray-800 text-sm py-2 leading-none px-4 mr-14 rounded-md text-center font-bold tracking-wide trans-100"
+      >
+        <span class="-mt-01">
+          הרשמה
+        </span>
+      </NuxtLink>
+    </div>
   </header>
 </template>
 
 <script>
-import AppNavbarMenu from '@/components/AppNavbarMenu'
-import Icon from '@/components/icons/Icon'
-import IconLogomark from '@/components/icons/IconLogomark'
-
 export default {
-  components: {
-    AppNavbarMenu,
-    Icon,
-    IconLogomark
-  },
   props: {
     iconStyle: {
       type: String,
@@ -62,9 +101,6 @@ export default {
       this.showMenu = currentScrollPosition < this.lastScrollPosition
       this.lastScrollPosition = currentScrollPosition
     }
-    // closeToast(toastId) {
-    //   this.showToast = false
-    // }
   }
 }
 </script>
@@ -75,6 +111,13 @@ export default {
   transition: 0.33s all ease;
   &.menu--hidden {
     transform: translate3d(0, -100%, 0);
+  }
+}
+
+.navbar-item.nuxt-link-active {
+  @apply bg-red-600;
+  & .icon {
+    @apply text-white;
   }
 }
 </style>

@@ -2,8 +2,8 @@
   <footer class="h-16 w-full bg-black flex justify-between relative">
     <NuxtLink to="/" class="self-center mr-5">
       <AppLogotype
-        :width="68"
-        :height="32"
+        :width="70"
+        :height="30"
         :icon-color="'transperant'"
         class="logotype dark"
         icon-name="Telemet"

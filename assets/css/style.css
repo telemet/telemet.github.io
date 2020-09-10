@@ -1,102 +1,81 @@
 /* Base */
+body {
+  @apply bg-gray-900 text-gray-400 antialiased;
+}
+
+.grid-item {
+  @apply p-1;
+  @screen md {
+    @apply p-02;
+  }
+  @screen lg {
+    @apply p-2;
+  }
+}
+
 strong {
   @apply text-gray-100;
 }
 
-:focus {
-  @apply outline-none;
-}
-
-p a,
-li a {
-  @apply border-red-800 border-b;
+/* li a, */
+p a {
+  @apply border-gray-500 border-b;
   &:hover {
-    @apply text-white border-red-600;
-  }
-  &:focus,
-  &:active {
-    @apply bg-red-600 text-white;
+    @apply text-white border-gray-400;
   }
 }
 
-.focus:focus,
+*:focus {
+  @apply outline-none shadow-outline;
+}
+
+/* .focus:focus,
 .focus:active {
   @apply bg-red-600 text-white;
-}
+} */
 
 /* Transitions */
 .trans-100 {
   @apply transition-colors duration-100 ease-in-out;
 }
 
-/* img {
-  filter: grayscale(0.5);
+hr {
+  @apply border border-gray-800;
 }
 
-img:hover {
-  filter: grayscale(0);
-} */
-
-/* html {
-  @apply font-sans;
-}
-
-html.he {
-  @apply font-he;
-} */
-
-/* Utilities */
-/* Hide input type number-control arrows */
-/* input[type='number'] {
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
-  &::-webkit-inner-spin-button,
-  &::-webkit-outer-spin-button {
-    -webkit-appearance: none;
+@responsive {
+  .bg-gradient-red {
+    background: rgb(255, 40, 70);
+    background: linear-gradient(
+      -45deg,
+      rgba(255, 40, 70, 1) 20%,
+      rgba(255, 5, 40, 1) 80%
+    );
   }
-} */
+}
 
-/* Colors: Gradients */
-/*.gradient-white {
-  background: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0) 20%,
-    rgba(255, 255, 255, 0.56) 100%
-  );
-}*/
-/* 
-.gradient-white:hover {
-  background: linear-gradient(
-    -45deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.96) 100%
-  );
-} */
+/* CSS Transitions */
 
 .page-enter-active,
-.page-leave-active {
+.page-leave-active,
+.layout-enter-active,
+.layout-leave-active {
   transition: opacity 0.333s ease-in-out;
 }
+
 .page-enter,
-.page-leave-to {
+.page-leave-to,
+.layout-enter,
+.layout-leave-to {
   opacity: 0;
 }
 
 /* .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.333s ease-out;
+  transition: opacity 0.633s ease-in-out;
 }
+
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
-}
-
-.fade-slower-enter-active,
-.fade-slower-leave-active {
-  transition: opacity 1.999s ease-out;
-}
-.fade-slower-enter,
-.fade-slower-leave-to {
-  opacity: 0.5;
 } */
