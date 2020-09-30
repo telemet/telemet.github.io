@@ -1,17 +1,12 @@
 ---
 title: מועדון ״השיער הורוד״
 description: עבדי מין, סמליות ומ.ק. אולטרה בטא
-# img: mkultra-beta-pink-hair.jpg
 img: /tal.alon/images/pink-hair2.jpg
-# alt: המערכה למען שחרור העם
-# createdAt: 2020-07-26
 type: t
 feature: true
 author:
-  # img: tal.alon.jpg
   name: tal.alon
   hname: טל אלון
-  bio: חוקרת אמת וכל המתקשר לשליטה מחשבתית ומ.ק. אולטרה
   status: sub
 ---
 
