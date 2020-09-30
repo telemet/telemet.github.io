@@ -68,15 +68,15 @@ export default {
         type: {$eq: 'g'},
         slug: {$containsNone: ['profile', 'sample']}
       })
-      .only([
-        'title',
-        'description',
-        'img',
-        'slug',
-        'author',
-        'dir',
-        'updatedAt'
-      ])
+      // .only([
+      //   'title',
+      //   'description',
+      //   'img',
+      //   'slug',
+      //   'author',
+      //   'dir',
+      //   'updatedAt'
+      // ])
       .sortBy('updatedAt', 'desc')
       .limit(20)
       .fetch()

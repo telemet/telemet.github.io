@@ -16,7 +16,7 @@
     <!-- Main -->
     <template v-slot:main>
       <ul>
-        <li v-for="post of posts" :key="post.index">
+        <li v-for="(post, index) of posts" :key="index">
           <!-- <pre>{{ post.path }}</pre> -->
           <NuxtLink
             :to="post.path"
@@ -69,15 +69,17 @@ export default {
         type: {$eq: 't'},
         slug: {$containsNone: ['profile', 'sample']}
       })
-      .only([
-        'title',
-        'description',
-        'img',
-        'slug',
-        'author',
-        'dir',
-        'updatedAt'
-      ])
+      // .only([
+      //   'title',
+      //   'description',
+      //   'img',
+      //   'slug',
+      //   'author',
+      //   'dir',
+      //   'updatedAt',
+      //   'path',
+      //   'type'
+      // ])
       .sortBy('updatedAt', 'desc')
       .limit(20)
       .fetch()

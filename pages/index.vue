@@ -89,7 +89,7 @@ export default {
   async asyncData({$content, params}) {
     const posts = await $content(params.slug, {deep: true})
       .where({feature: true})
-      .only(['title', 'description', 'img', 'slug', 'dir', 'author', 'type'])
+      // .only(['title', 'description', 'img', 'slug', 'dir', 'author', 'type'])
       .sortBy('updatedAt', 'desc')
       .limit(6)
       // .skip(1)
