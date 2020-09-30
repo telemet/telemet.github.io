@@ -12,7 +12,18 @@
         class="flex items-center flex-1 text-gray-500 group-hover:text-gray-100 text-base md:text-lg lg:text-xl tracking-wide trans-100"
       >
         <span class="name mr-4">{{ hname }}</span>
+        <!-- <span class="mr-4">{{ coins }}</span> -->
       </p>
+
+      <NuxtLink
+        v-if="id"
+        :to="{name: 'join', query: {id: id, type: type}}"
+        class="ml-4 self-center flex justify-center items-center text-gray-600 group-hover:text-gray-100 group-hover:bg-red-600 text-sm py-3 leading-none px-4 mr-14 rounded-md text-center font-bold tracking-wide trans-100"
+      >
+        <span class="-mt-01">
+          {{ id }}
+        </span>
+      </NuxtLink>
 
       <!-- Icon -->
       <icon
@@ -37,22 +48,14 @@
         class="flex items-center flex-1 text-gray-500 group-hover:text-gray-100 text-base md:text-lg lg:text-xl tracking-wide trans-100"
       >
         <span class="name mr-4">{{ hname }}</span>
+        <!-- <span class="mr-4">{{ coins }}</span> -->
       </p>
     </NuxtLink>
   </li>
 </template>
 
 <script>
-// import AppAvatar from '@/components/AppAvatar'
-// import Icon from '@/components/icons/Icon'
-// import IconLink from '@/components/icons/IconLink'
-
 export default {
-  components: {
-    // AppAvatar,
-    // Icon,
-    // IconLink
-  },
   props: {
     status: {
       type: String,
@@ -77,6 +80,14 @@ export default {
     initial: {
       type: String,
       default: 'א'
+    },
+    id: {
+      type: String,
+      default: null
+    },
+    coins: {
+      type: String,
+      default: null
     }
   }
 }

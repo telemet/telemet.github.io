@@ -109,12 +109,30 @@ export default {
   }
   /* Large */
   &.avatar-4xl {
-    @apply w-24 h-24;
+    @apply w-20 h-20;
     & .indicator {
-      @apply w-6 h-6;
+      @apply w-4 h-4;
     }
     & .initial {
-      @apply text-5xl -mt-02 -mr-1;
+      @apply text-3xl -mt-02 -mr-1;
+    }
+    @screen md {
+      @apply w-22 h-22;
+      & .indicator {
+        @apply w-5 h-5;
+      }
+      & .initial {
+        @apply text-4xl -mt-02 -mr-1;
+      }
+    }
+    @screen lg {
+      @apply w-24 h-24;
+      & .indicator {
+        @apply w-6 h-6;
+      }
+      & .initial {
+        @apply text-5xl -mt-02 -mr-1;
+      }
     }
   }
 }

@@ -2,7 +2,8 @@
   <div class="post pt-14">
     <!-- Post Image -->
     <Parallax :section-height="100">
-      <Poster :url="post.dir + '/images/' + post.img" :alt="post.title" />
+      <!-- <Poster :src="post.dir + '/images/' + post.img" :alt="post.title" bg /> -->
+      <Poster :src="post.img" :alt="post.title" bg />
     </Parallax>
 
     <!-- Post Meta -->
@@ -82,35 +83,83 @@
 
       <nuxt-content :document="post" class="content" />
 
-      <a
-        v-if="post.fbUrl"
-        :href="
-          'https://www.facebook.com/groups/telemetISR/permalink/' + post.fbUrl
-        "
-        title="קישור עריכה"
-        target="_blank"
-        class="transition-colors duration-100 ease-in-out bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white p-3 md:p-4 mt-12 mb-0 tracking-wider text-sm md:text-base rounded-lg block focus"
-      >
-        <p>
-          רוצה להגיב? התחברו לקבוצת טלאֱמֶת ב- Facebook
-        </p>
-      </a>
+      <!-- <div v-if="post.gallery">
+        <ul class="gallery my-6 w-10/12 md:w-8/12 mx-auto">
+          <li
+            v-for="(image, index) in post.gallery"
+            :key="index"
+            class="my-4 rounded-lg overflow-hidden"
+          >
+            <img
+              :src="image.src"
+              :alt="image.alt"
+              loading="lazy"
+              class="w-full"
+            />
+          </li>
+        </ul>
+      </div> -->
+      <!-- <hr class="my-12" /> -->
 
-      <a
-        :href="
-          'https://github.com/telemet/telemet/blob/master/content/' +
-            post.path +
-            post.extension
-        "
-        title="קישור עריכה"
-        target="_blank"
-        class="transition-colors duration-100 ease-in-out bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white p-3 md:p-4 mt-2 mb-12 tracking-wider text-sm md:text-base rounded-lg block focus"
-      >
-        <p>
-          מצאת טעות או רוצה לתרום לעריכה? הקוד פתוח ב- GitHub
+      <aside class="mt-6">
+        <p class="text-gray-500 tracking-wide mb-2 text-sm">
+          לתמיכה בעבודה והמשך הפעילות של {{ author.hname }} הרשמו עם קוד ההזמנה:
         </p>
-      </a>
-      <!-- <pre> {{ post }} </pre> -->
+        <NuxtLink
+          :to="'/' + author.name"
+          class="bg-gray-800 rounded-lg py-3 px-2 flex items-center hover:bg-gray-700 mb-4"
+        >
+          <AppAvatar
+            :name="author.name"
+            :type="post.type"
+            :status="author.status"
+            class="avatar-xl ml-3 mr-2"
+          />
+          <h1
+            class="flex-1 text-xl font-bold text-gray-200 tracking-wide leading-snug mb-1 ml-5"
+          >
+            {{ author.hname }}
+          </h1>
+          <NuxtLink
+            v-if="author.id"
+            :to="{name: 'join', query: {id: author.id, type: post.type}}"
+            class="ml-4 flex justify-center items-center text-gray-100  bg-red-600 text-sm py-3 leading-none px-4 mr-14 rounded-md text-center font-bold tracking-wide trans-100"
+          >
+            <span class="-mt-01">
+              {{ author.id }}
+            </span>
+          </NuxtLink>
+        </NuxtLink>
+        <a
+          v-if="post.fbUrl"
+          :href="
+            'https://www.facebook.com/groups/telemetISR/permalink/' + post.fbUrl
+          "
+          title="קישור עריכה"
+          target="_blank"
+          class="transition-colors duration-100 ease-in-out bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white p-3 md:p-4 mt-6 mb-0 tracking-wider text-sm md:text-base rounded-lg block focus"
+        >
+          <p>
+            רוצה להגיב? התחברו לקבוצת טלאֱמֶת ב- Facebook
+          </p>
+        </a>
+
+        <a
+          :href="
+            'https://github.com/telemet/telemet/blob/master/content/' +
+              post.path +
+              post.extension
+          "
+          title="קישור עריכה"
+          target="_blank"
+          class="transition-colors duration-100 ease-in-out bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white p-3 md:p-4 mt-2 mb-12 tracking-wider text-sm md:text-base rounded-lg block focus"
+        >
+          <p>
+            מצאת טעות או רוצה לתרום לעריכה? הקוד פתוח ב- GitHub
+          </p>
+        </a>
+      </aside>
+      <!-- <pre> {{ author }} </pre> -->
     </article>
   </div>
 </template>
@@ -127,7 +176,21 @@ export default {
       deep: true
     }).fetch()
 
-    return {post}
+    const authorProfilePost = await $content(params.path, {deep: true})
+      .where({
+        'author.name': {
+          $regex: [params.author, 'i']
+        },
+        slug: {$contains: 'profile'}
+      })
+      .without('body')
+      .fetch()
+    const author = authorProfilePost[0].author
+
+    return {
+      post,
+      author
+    }
   },
   methods: {
     formatDate(date) {
@@ -191,6 +254,12 @@ export default {
 <style lang="postcss" scoped>
 .content {
   @apply tracking-wide overflow-hidden;
+  & a {
+    @apply bg-gray-700 rounded px-1 text-gray-100 border-none;
+    &:hover {
+      @apply bg-red-600 text-white;
+    }
+  }
   & h2 {
     @apply mt-12 text-3xl text-red-600 font-bold;
     @screen md {
@@ -247,7 +316,7 @@ export default {
     @apply px-3 my-10 text-lg list-none;
     counter-reset: my-counter;
     @screen md {
-      @apply px-4 my-12 text-xl;
+      @apply px-4 my-2 text-xl;
     }
     & li {
       @apply my-4 text-gray-400;
@@ -268,6 +337,19 @@ export default {
     @apply border-gray-700 block mt-16 mb-8;
     & + p {
       @apply text-xl;
+    }
+  }
+  & .video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    & iframe {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
     }
   }
   /* & table {
@@ -304,7 +386,7 @@ export default {
     & li {
       @apply my-2;
       & a {
-        @apply transition-colors duration-100 ease-in-out;
+        @apply transition-colors duration-100 ease-in-out border-none;
         &:hover {
           @apply text-white;
         }
@@ -314,13 +396,13 @@ export default {
 }
 
 .footnotes a {
-  @apply border-0;
+  @apply border-none;
 }
-.footnote-ref {
-  @apply pr-01 font-sans border-0 text-red-600 font-bold text-xs;
+a.footnote-ref {
+  @apply pr-01 font-sans border-0 text-gray-300 bg-red-600 font-bold text-xs;
 }
 
-.footnote-backref {
+a.footnote-backref {
   @apply bg-gray-800 font-mono px-2 mx-2 rounded inline-block;
   &:hover {
     @apply bg-gray-600;

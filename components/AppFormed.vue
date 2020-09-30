@@ -17,19 +17,19 @@
               class="form-control"
               required="required"
               name="entry.1664355950"
-              placeholder="T-051F0EABF1"
+              placeholder="051F0EABF1"
             />
 
             <p class="mt-2 text-gray-500 tracking-wider text-sm leading-snug">
               <span v-if="state === 't'">
                 קוד הזמנה להרשמה כחבר אמת ניתן להשיג ע״י קישור מדף
-                <NuxtLink to="/g/telemet">
-                  קבוצת טלאמת
+                <NuxtLink to="/t/list">
+                  חברי האמת
                 </NuxtLink>
               </span>
               <span v-if="state === 'g'">
                 קוד הזמנה להרשמה כחבר תורם לקבוצה ניתן להשיג ע״י קישור מדף
-                <NuxtLink to="/g">
+                <NuxtLink to="/g/list">
                   הקבוצה
                 </NuxtLink>
               </span>
@@ -97,15 +97,34 @@
           <!-- Form: Select G -->
           <div v-if="state === 'g'" class="form-group">
             <validation-provider v-slot="{errors}" rules="required|numeric">
-              <label class="control-label" for="donate">תרומה</label>
+              <label class="control-label" for="donate">
+                תמיכה (חודשית) <sup>4</sup>
+              </label>
               <select v-model="donate" class="form-control select-css">
                 <option disabled value="">סכום לבחירה</option>
-                <option value="1">1 ₪ לחודש</option>
-                <option value="2">2 ₪ לחודש</option>
-                <option value="3">3 ₪ לחודש</option>
-                <option value="5">5 ₪ לחודש</option>
-                <option value="8">8 ₪ לחודש</option>
+                <option value="1">1 ₪ חודשי</option>
+                <option value="2">2 ₪ חודשי</option>
+                <option value="3">3 ₪ חודשי</option>
+                <option value="5">5 ₪ חודשי</option>
+                <option value="8">8 ₪ חודשי</option>
+                <option value="13">13 ₪ חודשי</option>
+                <option value="21">21 ₪ חודשי</option>
+                <option value="34">34 ₪ חודשי</option>
+                <option value="55">55 ₪ חודשי</option>
+                <option value="89">89 ₪ חודשי</option>
+                <option value="144">144 ₪ חודשי</option>
+                <option value="233">233 ₪ חודשי</option>
+                <option value="377">377 ₪ חודשי</option>
+                <option value="610">610 ₪ חודשי</option>
+                <option value="987">987 ₪ חודשי</option>
               </select>
+              <input
+                v-model="donate"
+                type="hidden"
+                class="form-control"
+                required="required"
+                name="entry.1623293832"
+              />
               <span v-if="errors[0]" class="error">{{ errors[0] }}</span>
             </validation-provider>
           </div>
@@ -113,15 +132,34 @@
           <!-- Form: Select G -->
           <div v-if="state === 'c'" class="form-group">
             <validation-provider v-slot="{errors}" rules="required|numeric">
-              <label class="control-label" for="donate">תרומה</label>
+              <label class="control-label" for="donate">
+                תמיכה (חד-פעמית) <sup>4</sup>
+              </label>
               <select v-model="donate" class="form-control select-css">
                 <option disabled value="">סכום לבחירה</option>
-                <option value="1">1 ₪</option>
-                <option value="2">2 ₪</option>
-                <option value="3">3 ₪</option>
-                <option value="5">5 ₪</option>
-                <option value="8">8 ₪</option>
+                <option value="1">1 ₪ חד-פעמי</option>
+                <option value="2">2 ₪ חד-פעמי</option>
+                <option value="3">3 ₪ חד-פעמי</option>
+                <option value="5">5 ₪ חד-פעמי</option>
+                <option value="8">8 ₪ חד-פעמי</option>
+                <option value="13">13 ₪ חד-פעמי</option>
+                <option value="21">21 ₪ חד-פעמי</option>
+                <option value="34">34 ₪ חד-פעמי</option>
+                <option value="55">55 ₪ חד-פעמי</option>
+                <option value="89">89 ₪ חד-פעמי</option>
+                <option value="144">144 ₪ חד-פעמי</option>
+                <option value="233">233 ₪ חד-פעמי</option>
+                <option value="377">377 ₪ חד-פעמי</option>
+                <option value="610">610 ₪ חד-פעמי</option>
+                <option value="987">987 ₪ חד-פעמי</option>
               </select>
+              <input
+                v-model="donate"
+                type="hidden"
+                class="form-control"
+                required="required"
+                name="entry.345935407"
+              />
               <span v-if="errors[0]" class="error">{{ errors[0] }}</span>
             </validation-provider>
           </div>
@@ -137,7 +175,7 @@
             class="btn btn-lg bg-gradient-red text-white mx-auto w-full"
             title="שלח/י"
           />
-          <div class="text-sm mt-4 block text-gray-500 tracking-wider">
+          <div class="text-sm mt-4 block text-gray-400 tracking-wider">
             <p>
               <span class="sup">1 + 2. </span>
               טלאמת מכבדת את החופש לפרטיות של חבריה ולא מחייבת שימוש בשם לידה.
@@ -148,9 +186,11 @@
               כתובות דוא״ל נשארות חסויות ולעולם לא יפורסמו ע״י טלאמת. אם בחרת
               להירשם לקבוצה או מערכה, כתובת הדוא״ל שלך תשותף ע״י טלאמת באופן
               מוצפן עם מנהל הקבוצה או המערכה אליה נרשמת.
-              <span class="sup">4. </span>
-              תרומות ותמיכה שלא מבוססות על זמן ומלאכה יאספו באופן מאורגן ופרטי
-              ע״י מנהל הקבוצה.
+              <span v-if="state !== 't'" class="sup">4. </span>
+              <span v-if="state !== 't'">
+                תרומות ותמיכה שלא מבוססות על זמן ומלאכה יאספו באופן מאורגן ופרטי
+                ע״י מנהל הקבוצה.
+              </span>
             </p>
           </div>
         </footer>
@@ -162,13 +202,9 @@
 <script>
 import axios from 'axios'
 import {ValidationObserver, ValidationProvider} from 'vee-validate'
-// eslint-disable-next-line no-unused-vars
-// import {required} from '@/plugins/vee-validate'
-// import AppButton from '@/components/AppButton'
 
 export default {
   components: {
-    // AppButton,
     ValidationObserver,
     ValidationProvider
   },
@@ -198,6 +234,14 @@ export default {
       set: (newVal) => (this.inviteCode = newVal)
     }
   },
+  // mounted() {
+  //   if (this.$route.query.id) {
+  //     this.inviteCode = this.$route.query.id
+  //     this.state = this.$route.query.id.charAt(0)
+  //   } else {
+  //     this.inviteCode = null
+  //   }
+  // },
   methods: {
     response() {
       const vm = this
@@ -257,7 +301,7 @@ sup,
 }
 
 .control-label {
-  @apply block text-gray-500 text-lg font-normal mb-01 tracking-wide;
+  @apply block text-gray-400 text-lg font-normal mb-01 tracking-wide;
 }
 
 .error {

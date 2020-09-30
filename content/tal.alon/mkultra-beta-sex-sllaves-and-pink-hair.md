@@ -2,13 +2,13 @@
 title: מועדון ״השיער הורוד״
 description: עבדי מין, סמליות ומ.ק. אולטרה בטא
 # img: mkultra-beta-pink-hair.jpg
-img: pink-hair2.jpg
+img: /tal.alon/images/pink-hair2.jpg
 # alt: המערכה למען שחרור העם
 # createdAt: 2020-07-26
 type: t
 feature: true
 author:
-  img: tal.alon.jpg
+  # img: tal.alon.jpg
   name: tal.alon
   hname: טל אלון
   bio: חוקרת אמת וכל המתקשר לשליטה מחשבתית ומ.ק. אולטרה
@@ -21,9 +21,7 @@ author:
 
 > ע"י סמל השיער הורוד, הדיוות של מ.ק. אולטרה מציגות את השעבוד שלהן
 
-<p>
-  <poster src="/tal.alon/images/pink-hair.jpg" alt="תוצאות חיפוש"></poster>
-</p>
+![pink hair 1](https://imgur.com/YvfOgJM.jpg)
 
 מדובר בפרויקט תכנות, בעל מטרות סדיסטיות, המבוצעת על ידי האליטה העולמית בתעשיית הבידור, בניצול השילוב של כריזמה מינית ואטרקטיביות גופנית של המפורסמים, המושכים את קהל ההמונים.
 
@@ -41,6 +39,8 @@ author:
 
 > מ.ק. אולטרה בטא, הם המשפיעים הגדולים ביותר ואלה שבעולם הבידור.[^2] הם משמשים להעברת מסרים להמונים, שטיפות מוח והחדרת מסרים לתודעה.
 
+![pink hair 2](https://imgur.com/QF9n0m6.jpg)
+
 תכנות מ.ק. אולטרה אינו חדש, הוא עתיק, מנגלה רק ניסה לשכלל אותו בשואה ולהפוך אותו לשימושי, מעבר למין. כבר במאה ה- 19 היו עבדי מין נשיים וזכריים, שנשלטו נפשית
 
 נשמע מטורף? נדמה לכם שלא קיים דבר כזה תכנות על בני אדם? שוב קונספירציות מדומיינות?
@@ -49,6 +49,10 @@ author:
 
 <!-- קישור לפוסט הראשון שלי אודות פרוייקט תכנות מ.ק אולטרה
 https://m.facebook.com/story.php?story_fbid=146518930393400&id=100051058823152 -->
+
+![pink hair 3](https://imgur.com/almZDFe.jpg)
+![pink hair 4](https://imgur.com/DVkpgBO.jpg)
+![pink hair 5](https://imgur.com/3HgrIPM.jpg)
 
 [^1]: [חתלתולות מין בתעשיית הבידור](https://youtu.be/_sMXYGU8Gnc)
 [^2]: [ הצצה לאיך נראים אנשי תעשיית הבידור שעברו שעבוד ותכנות](https://m.facebook.com/story.php?story_fbid=1325333210843856&id=455942847782901)

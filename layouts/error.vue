@@ -33,7 +33,7 @@
 // import AppPoster from '@/components/AppPoster'
 
 export default {
-  name: 'Home',
+  // name: 'Home',
   components: {
     // AppButton,
     // AppPoster
@@ -47,6 +47,9 @@ export default {
   },
   head() {
     return {
+      bodyAttrs: {
+        class: 'error'
+      },
       title: this.title,
       meta: [
         {

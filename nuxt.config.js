@@ -5,8 +5,11 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: 'טלאֱמֶת | %s',
-    title: 'טלאֱמֶת',
+    titleTemplate(title) {
+      return title ? `טלאֱמֶת | ${title}` : 'טלאֱמֶת'
+    },
+    // titleTemplate: 'טלאֱמֶת | %s',
+    // title: 'טלאֱמֶת',
     htmlAttrs: {
       lang: 'he',
       dir: 'rtl'

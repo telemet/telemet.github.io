@@ -2,9 +2,9 @@
 title: מאמר לדוגמה
 # description: האמת היא היעד האולטימטיבי
 description: מאמר לדוגמה כולל פרטים איך לשלב תכנים משלכם בממשק טלאֱמֶת באמצעות Github
-img: default.jpg
-alt: תיאור תמונה
-createdAt: 2020-07-20
+img: /nimrod.yahad/images/post-sample.jpg
+# alt: תיאור תמונה
+# createdAt: 2020-07-20
 type: t
 author:
   name: nimrod.yahad
@@ -14,6 +14,8 @@ author:
 ---
 
 בקרוב
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/rgbCcBNZcdQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 <!-- ## הערות -->
 

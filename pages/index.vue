@@ -15,7 +15,8 @@
             >
               <div v-show="index === currentPost">
                 <Poster
-                  :url="post.dir + '/images/' + post.img"
+                  bg
+                  :src="post.img"
                   :alt="post.title"
                   class="fixed h-screen top-0 w-full mt-14 bg-top bg-no-repeat bg-fixed bg-cover"
                 />
@@ -72,7 +73,7 @@
               <IconArrow />
             </icon>
           </span>
-          <h2>
+          <h2 class="title">
             רשת ידע חברתית מבוזרת וחופשייה
           </h2>
         </div>
@@ -84,7 +85,7 @@
 
 <script>
 export default {
-  layout: 'home',
+  // layout: 'home',
   async asyncData({$content, params}) {
     const posts = await $content(params.slug, {deep: true})
       .where({feature: true})
@@ -107,11 +108,24 @@ export default {
     next() {
       this.currentPost = (this.currentPost + 1) % this.posts.length
     }
+  },
+  head() {
+    return {
+      // title: '',
+      bodyAttrs: {
+        class: 'home'
+      }
+    }
   }
 }
 </script>
 
 <style lang="postcss" scoped>
+.title {
+  @apply text-white;
+  mix-blend-mode: difference;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.99s ease-in-out;

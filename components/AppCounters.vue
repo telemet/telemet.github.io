@@ -3,7 +3,7 @@
     <!-- Counter: Members -->
     <div class="grid-item members group w-5/12">
       <NuxtLink
-        to="/t"
+        to="/t/list"
         class="counter bg-gray-700 group-hover:bg-gray-600 trans-100"
       >
         <h2>פעילים</h2>
@@ -32,7 +32,7 @@
     <!-- Counter: Groups -->
     <div class="grid-item groups group w-4/12">
       <NuxtLink
-        to="/g"
+        to="/g/list"
         class="counter bg-gray-700 group-hover:bg-gray-600 trans-100"
       >
         <h2>קבוצות</h2>

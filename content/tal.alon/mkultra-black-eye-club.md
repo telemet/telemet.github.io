@@ -1,13 +1,13 @@
 ---
 title: מועדון ״העין השחורה״
 description: מועדון ״העין השחורה״ לחברי ומשרתי האָפֵלומינאטי בלבד
-img: black-eye-club2.jpg
+img: /tal.alon/images/black-eye-club2.jpg
 # alt: המערכה למען שחרור העם
 # createdAt: 2020-07-26
 type: t
 feature: true
 author:
-  img: tal.alon.jpg
+  # img: tal.alon.jpg
   name: tal.alon
   hname: טל אלון
   bio: חוקרת אמת וכל המתקשר לשליטה מחשבתית ומ.ק. אולטרה

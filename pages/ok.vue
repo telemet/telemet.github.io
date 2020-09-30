@@ -1,113 +1,145 @@
 <template lang="html">
   <!-- Wrapper -->
-  <div class="min-h-screen mx-auto">
-    <AppPoster poster="telemet-balfur3" />
+  <div class="min-h-screen">
+    <!-- Content -->
+    <section class="flex">
+      <!-- Posts feed -->
+      <div class="absolute bottom-0 right-0 w-12/12 md:w-6/12 mb-28 md:mb-8">
+        <ul>
+          <li>
+            <transition
+              appear
+              name="fade"
+              @after-enter="showToast = true"
+              @before-leave="showToast = false"
+            >
+              <div>
+                <Poster
+                  bg
+                  src="/telemet/images/app/telemet-tlv.jpg"
+                  alt="תודה"
+                  class="fixed h-screen top-0 w-full mt-14 bg-top bg-no-repeat bg-fixed bg-cover"
+                />
+                <transition v-if="showToast" appear name="slide">
+                  <NuxtLink
+                    to="/telemet"
+                    class="group bg-gray-800 bg-opacity-75 hover:bg-gray-700 hover:bg-opacity-90 border-0 rounded-lg transition-colors duration-150 ease-in-out flex fixed z-10 mx-8 -mt-24 max-w-lg"
+                  >
+                    <!-- :source="'/images/t/' + post.author.name + '.jpg'" -->
+                    <AppAvatar
+                      name="telemet"
+                      type="g"
+                      status="sup"
+                      class="mr-4 my-4 avatar-lg"
+                    />
+                    <div
+                      class="border-r border-gray-600 trans-100 mr-4 px-4 py-3 flex-1"
+                    >
+                      <h1
+                        class="text-lg font-bold text-gray-200 tracking-wide leading-snug mb-1"
+                      >
+                        תודה לך
+                      </h1>
+                      <!-- <p class="mb-2 text-gray-100">{{ post.author.hname }}</p> -->
+                      <h2
+                        class="text-sm tracking-wide text-gray-400 group-hover:text-gray-200 trans-100"
+                      >
+                        טופס ההרשמה שמילאת נשלח בהצלחה. פרטים נוספים יישלחו
+                        לכתובת הדוא״ל איתה נרשמת.
+                      </h2>
+                    </div>
+                  </NuxtLink>
+                </transition>
+              </div>
+            </transition>
+          </li>
+        </ul>
+      </div>
 
-    <!-- Counter -->
-    <section
-      id="main"
-      class="fixed min-h-screen w-full flex flex-col items-center justify-center"
-    >
+      <!-- Tagline + Next -->
       <div
-        class="text-center mx-auto bg-gray-800 rounded-lg border border-gray-700"
+        class="absolute bottom-0 md:left-0 mb-8 md:mb-12 w-full md:w-auto px-8"
       >
-        <h1 class="text-6xl font-bold text-red-700 mt-4">
-          תודה
-        </h1>
-
-        <p class="text-gray-100 text-3xl mx-4 px-4">
-          בקשתך נשלחה בהצלחה
-        </p>
-        <p class="w-80 mx-auto text-gray-300 mt-6 px-4">
-          פרטים נוספים והוראות לקידום המערכה יישלחו לכתובת הדוא״ל איתו נרשמת תוך
-          24-48 שעות.
-        </p>
-        <hr class="mt-8 block border-gray-600" />
-        <div class="bg-gray-700">
-          <NuxtLink to="/">
-            <app-button
-              class="btn btn-sm btn-red mx-auto my-10"
-              title="לדף הבית"
-            />
+        <div class="w-full block md:flex md:flex-col">
+          <NuxtLink
+            to="/"
+            class="self-end mb-3 md:mb-4 flex w-10 p-1 justify-center bg-red-700 rounded cursor-pointer"
+          >
+            <icon
+              :icon-color="'transperant'"
+              class="fill-current w-6 h-5 text-gray-400 group-hover:text-white"
+              icon-name="Menu"
+            >
+              <IconArrow />
+            </icon>
           </NuxtLink>
+          <h2>
+            רשת ידע חברתית מבוזרת וחופשייה
+          </h2>
         </div>
       </div>
     </section>
+    <!-- <pre class="fixed">{{ posts }}</pre> -->
   </div>
 </template>
 
 <script>
-// import AppButton from '~/components/AppButton'
-import AppPoster from '@/components/AppPoster'
-
 export default {
-  name: 'Home',
-  components: {
-    // AppButton,
-    AppPoster
-  },
+  // layout: 'home',
+  // async asyncData({$content, params}) {
+  //   const posts = await $content(params.slug, {deep: true})
+  //     .where({feature: true})
+  //     .only(['title', 'description', 'img', 'slug', 'dir', 'author', 'type'])
+  //     .sortBy('updatedAt', 'desc')
+  //     .limit(6)
+  //     // .skip(1)
+  //     .fetch()
+  //   return {
+  //     posts
+  //   }
+  // },
   data() {
     return {
-      title: 'אודות',
-      description: 'אודות טלאֱמֶת'
-      // poster: 'https://telemet.org/images/telemet-meta-poster.jpg'
+      currentPost: 0,
+      showToast: false
     }
+  },
+  methods: {
+    // next() {
+    //   this.currentPost = (this.currentPost + 1) % this.posts.length
+    // }
   },
   head() {
     return {
-      title: this.title,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.description
-        },
-        // Open Graph / Facebook
-        {
-          hid: 'og:url',
-          property: 'og:url',
-          content: this.$nuxt.$route.path
-        },
-        {
-          hid: 'og:title',
-          property: 'og:title',
-          content: 'טלאֱמֶת | ' + this.title
-        },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: this.description
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: this.poster
-        },
-        // Twitter
-        {
-          hid: 'twitter:url',
-          property: 'twitter:url',
-          content: this.$nuxt.$route.path
-        },
-        {
-          hid: 'twitter:title',
-          property: 'twitter:title',
-          content: 'טלאֱמֶת | ' + this.title
-        },
-        {
-          hid: 'twitter:description',
-          property: 'twitter:description',
-          content: this.description
-        },
-        {
-          hid: 'twitter:image',
-          property: 'twitter:image',
-          content: this.poster
-        }
-      ]
+      // title: '',
+      bodyAttrs: {
+        class: 'home'
+      }
     }
   }
 }
 </script>
 
-<style lang="postcss" scoped></style>
+<style lang="postcss" scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.99s ease-in-out;
+  transition-delay: 0.36s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  @apply transform translate-x-0 transition-all duration-500 ease-in-out;
+}
+
+.slide-enter,
+.slide-leave-to {
+  /* opacity: 0; */
+  @apply transform translate-x-full transition-all duration-500 ease-in-out opacity-0;
+}
+</style>

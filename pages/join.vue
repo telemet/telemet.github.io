@@ -2,20 +2,23 @@
   <!-- Wrapper -->
   <div class="w-full mx-auto pt-14">
     <!-- Header -->
-    <div class="container mx-auto px-6 mt-8">
+    <div v-if="!this.$route.query.id" class="container mx-auto px-6 mt-8">
       <AppTitleBar class="" title="הרשמה">
         <AppToggle @toggle="showFeatures()" />
       </AppTitleBar>
     </div>
 
+    <!-- <pre>{{ $route.query.type }}</pre> -->
+
     <!-- Select Signup -->
     <section
+      v-if="!this.$route.query.id"
       class="flex flex-col lg:flex-row justify-between container mx-auto px-6"
     >
       <AppSignupSelect
         v-for="button in buttons"
         :key="button.type"
-        v-scroll-to="'#main'"
+        v-scroll-to="{el: '#main', offset: -66}"
         :is-active="button.isActive"
         :show-features="button.showFeatures"
         :features="button.features"
@@ -87,7 +90,7 @@ export default {
   // layout: 'blank',
   data() {
     return {
-      state: 't',
+      state: this.$route.query.type ? this.$route.query.type : 't',
       buttons: [
         {
           isActive: true,
@@ -106,8 +109,8 @@ export default {
           isActive: false,
           showFeatures: false,
           type: 'g',
-          title: 'לקבוצה',
-          sub: 'הרשמה כחבר תורם',
+          title: 'בקבוצה',
+          sub: 'הרשמה כחבר תומך',
           features: [
             'הזדכות במספר מטבעות אמת התואם את תרומתך החד-פעמית',
             'דף פרופיל אישי',
@@ -119,8 +122,8 @@ export default {
           isActive: false,
           showFeatures: false,
           type: 'c',
-          title: 'למערכה',
-          sub: 'הרשמה כחבר תורם',
+          title: 'במערכה',
+          sub: 'הרשמה כחבר תומך',
           features: [
             'הזדכות במספר מטבעות אמת התואם את תרומתך החד-פעמית',
             'דף פרופיל אישי',
@@ -131,6 +134,11 @@ export default {
       ]
     }
   },
+  beforeMount() {
+    if (this.$route.query.type) {
+      this.state = this.$route.query.type
+    }
+  },
   methods: {
     // goBack() {
     //   this.$router.back()
@@ -139,6 +147,7 @@ export default {
       for (const button of this.buttons) {
         button.isActive = button === activatedButton
         this.state = event
+        this.$router.replace({query: null})
       }
     },
     showFeatures() {
@@ -152,7 +161,7 @@ export default {
   },
   head() {
     return {
-      title: this.title,
+      title: 'הרשמה',
       meta: [
         {
           hid: 'description',
@@ -215,6 +224,7 @@ body {
 .separator::before,
 .separator::after {
   content: '';
-  @apply flex-1 border-b border-gray-700;
+  /* @apply flex-1 border-b border-gray-700; */
+  @apply flex-1;
 }
 </style>

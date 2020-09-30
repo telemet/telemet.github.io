@@ -26,3 +26,10 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss" scoped>
+.home footer,
+.error footer {
+  @apply hidden;
+}
+</style>

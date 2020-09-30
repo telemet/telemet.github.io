@@ -1,9 +1,9 @@
 <template>
-  <img v-if="src" :src="imgSrc()" :alt="alt" />
+  <img v-if="!bg" :src="imgSrc()" :alt="alt" />
 
   <div
     v-else
-    :style="{backgroundImage: 'url(\'' + imgUrl() + '\')'}"
+    :style="{backgroundImage: 'url(\'' + imgSrc() + '\')'}"
     class="poster top-0 w-full bg-center bg-no-repeat bg-fixed bg-cover"
   />
 </template>
@@ -17,9 +17,9 @@ export default {
   },
   props: {
     // Use :url for background-image
-    url: {
-      type: String,
-      default: null
+    bg: {
+      type: Boolean,
+      default: false
     },
     // Use :src for img tag
     src: {
@@ -34,15 +34,12 @@ export default {
   methods: {
     imgSrc() {
       try {
-        return require(`~/content${this.src}`)
+        if (/(https?:\/\/.*\.(?:png|jpg|jpeg))/.test(this.src)) {
+          return this.src
+        } else return require(`~/content${this.src}`)
       } catch (error) {
-        return require(`~/assets/images/default.jpg`)
-      }
-    },
-    imgUrl() {
-      try {
-        return require(`~/content${this.url}`)
-      } catch (error) {
+        // eslint-disable-next-line no-console
+        console.log(error)
         return require(`~/assets/images/default.jpg`)
       }
     }
