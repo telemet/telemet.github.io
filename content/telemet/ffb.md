@@ -96,7 +96,7 @@ author:
   <poster src="/telemet/images/telemet-ffb-asset4.jpg" alt="פאק_פייסבוק"></poster>
 </p>
 
-- למגדילי ראש: מסגרת פרופיל (אפשרות 3) חפשו ״גם אני השתחררתי #ffb״
+- למגדילי ראש: מסגרת פרופיל (אפשרות 3) חפשו [גם אני השתחררתי #ffb](https://www.facebook.com/profilepicframes/?selected_overlay_id=375580653759419)
 <p>
   <poster src="/telemet/images/telemet-ffb-asset5.jpg" alt="פאק_פייסבוק"></poster>
 </p>

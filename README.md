@@ -1,14 +1,19 @@
-<a href="https://telemet.org"><p align="center"><img width="100%" src="https://raw.githubusercontent.com/telemet/telemet/master/static/images/telemet-poster.jpg"></p></a>
+<a href="https://telemet.org"><p align="center"><img width="100%" src="https://raw.githubusercontent.com/telemet/telemet/master/static/images/telemet-meta-social.jpg"></p></a>
 
 <i><p align="center">"In a time of universal deceit telling the truth Is a revolutionary act" *~George Orwell*</p></i>
 
 # telemet.org
 
-#### **tel** - *tele* - *teleos* (genitive [*telos*](https://www.etymonline.com/word/telos)) "ultimate object or aim, end, goal, completion, result"
+## Info
+רשת ידע מבוזרת וחופשייה. לחץ/י על הקישור לקבלת מידע ותשובות לשאלות נפוצות לגבי השימוש בממשק טלאֱמֶת החדש.
 
-#### **emet** - from [*Hebrew*](https://translate.google.com/#view=home&op=translate&sl=en&tl=iw&text=tel) "truth"
->
-> 
+https://telemet.org/faq
+
+
+## Demo
+[טלאֱמֶת](https://telemet.org)
+
+
 
 ## Build Setup
 

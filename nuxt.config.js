@@ -86,7 +86,7 @@ export default {
       name: 'טלאֱמֶת',
       lang: 'he',
       ogHost: 'https://telemet.org',
-      ogImage: 'https://telemet.org/images/telemet-poster.jpg'
+      ogImage: 'https://telemet.org/images/telemet-meta-social.jpg'
     }
   },
   webfontloader: {
