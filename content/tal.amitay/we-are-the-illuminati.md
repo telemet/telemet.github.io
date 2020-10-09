@@ -2,8 +2,6 @@
 title: מי הם האילומינטי באמת?
 description: המשמעות האמיתית של השם "אילומינטי" ומדוע אתם צריכים לחדול מלהשתמש בו באופן בו תורגלתם להשתמש.
 img: /tal.amitay/images/we-are-the-illuminati.jpg
-# alt: 
-# createdAt: YYYY-MM-DD
 type: t
 feature: true
 author:

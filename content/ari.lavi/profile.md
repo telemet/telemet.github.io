@@ -14,6 +14,6 @@ author:
   poster: https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg
 ---
 
-## הערות
+---
 
-דף פרופיל אישי לדוגמה. בשלבי עריכה.
+דף פרופיל אישי בשלבי עריכה.

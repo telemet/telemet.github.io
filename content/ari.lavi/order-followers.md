@@ -24,13 +24,13 @@ author:
 
 ---
 
-גירסה קצרה (בעברית)
+<!-- גירסה קצרה (בעברית)
 
 <div class="video">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/JcO1K1qCV6M" frameborder="0" allowfullscreen></iframe>
 </div>
 
----
+--- -->
 
 גירסה מלאה (באנגלית)
 

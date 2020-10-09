@@ -2,14 +2,11 @@
 title: השליטה המחשבתית ברשתות החברתיות
 description: ברשתות החברתיות מתכנתים את ההתנהגויות שלכם וזה משפיע על כולנו.
 img: /tal.amitay/images/telemet-ffb.jpg
-alt: הרשת החברתית שולטת בך
 type: t
-# feature: true
+feature: true
 author:
-  # img: tal-amitay.jpg
   name: tal.amitay
   hname: טל אמיתי
-  bio: 'וולונטריסט ערני, איש טכנולוגיה, ידע, מדעים ואומנויות. עושה את העבודה הגדולה, מבין חופשי ומסור לאמת האחת.'
   status: sup
 ---
 

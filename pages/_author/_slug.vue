@@ -159,7 +159,7 @@
           </p>
         </a>
       </aside>
-      <!-- <pre> {{ author }} </pre> -->
+      <!-- <pre> {{ isDev }} </pre> -->
     </article>
   </div>
 </template>
@@ -187,9 +187,12 @@ export default {
       .fetch()
     const author = authorProfilePost[0].author
 
+    // const isDev = process.env.NODE_ENV !== 'production'
+
     return {
       post,
       author
+      // isDev
     }
   },
   methods: {

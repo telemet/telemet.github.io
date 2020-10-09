@@ -2,15 +2,11 @@
 title: חופש הפרט
 description: פרטיות ואנונימיות הן מגן מפני עריצות הרוב ונאמנות למקובל.
 img: /tal.amitay/images/telemet-anon.jpg
-alt: פייסבוק שולט בך
-createdAt: 2020-07-27
 type: t
 feature: true
 author:
-  # img: tal-amitay.jpg
   name: tal.amitay
   hname: טל אמיתי
-  bio: 'וולונטריסט ערני, איש טכנולוגיה, ידע, מדעים ואומנויות. עושה את העבודה הגדולה, מבין חופשי ומסור לאמת האחת.'
   status: sup
 ---
 

@@ -56,12 +56,19 @@
       <app-navbar-menu class="" />
       <NuxtLink
         :to="{name: 'join', query: null}"
-        class="invisible md:visible absolute self-center flex justify-center items-center text-gray-400 hover:text-white bg-gray-800 hover:bg-red-600 border border-gray-600 hover:border-gray-800 text-sm py-2 leading-none px-4 mr-14 rounded-md text-center font-bold tracking-wide trans-100"
+        class="hidden self-center md:flex justify-center items-center text-gray-400 hover:text-white bg-gray-800 hover:bg-red-600 border border-gray-600 hover:border-gray-800 text-sm py-2 leading-none px-4 mr-4 rounded-md text-center font-bold tracking-wide trans-100"
       >
         <span class="-mt-01">
           הרשמה
         </span>
       </NuxtLink>
+      <!-- <div
+        v-if="isDev"
+        v-scroll-to="{el: 'footer', easing: 'linear', duration: 240000}"
+        class="self-center mx-4 cursor-pointer"
+      >
+        לחץ
+      </div> -->
     </div>
   </header>
 </template>
@@ -78,6 +85,7 @@ export default {
     return {
       showMenu: true,
       lastScrollPosition: ''
+      // isDev: process.env.NODE_ENV !== 'production'
     }
   },
   mounted() {
