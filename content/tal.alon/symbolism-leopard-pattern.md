@@ -1,7 +1,7 @@
 ---
 title: הסמליות של ההדפס המנומר 
 description: אחד מסמלי השעבוד של עבדי המין של האפלומינטי
-img: /tal.alon/images/mk-leopard.jpg
+img: /tal.alon/images/leopard.jpg
 type: t
 feature: true
 author:

@@ -2,15 +2,11 @@
 title: הסמליות של ״היד המוסתרת״ 
 description: משרתים במסירות את אדונינו הבונים החופשיים
 img: /tal.alon/images/hand-in-vest.jpg
-# alt: המערכה למען שחרור העם
-# createdAt: 2020-07-26
 type: t
 # feature: true
 author:
-  # img: tal.alon.jpg
   name: tal.alon
   hname: טל אלון
-  bio: חוקרת אמת וכל המתקשר לשליטה מחשבתית ומ.ק. אולטרה
   status: sub
 ---
 
