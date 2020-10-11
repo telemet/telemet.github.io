@@ -1,7 +1,7 @@
 ---
 title: הסמליות של העיו האחת
-description: מדוע מפורסמים מסתירים עין אחת בתמונות ומה זה אומר?
-img: /tal.alon/images/one-eye.jpg
+description: "מדוע מפורסמים מסתירים עין אחת בתמונות ומה זה אומר?"
+img: /tal.alon/images/oneeye.jpg
 type: t
 feature: true
 author:
@@ -66,7 +66,7 @@ author:
 <!-- ![montage1](https://i.imgur.com/O5hOiXI.jpg) -->
 <!-- ![unknown](https://i.imgur.com/SCUEJ5A.jpg) -->
 <!-- ![montage2](https://i.imgur.com/bhDdelU.jpg) -->
-![]()
+<!-- ![]() -->
 
 [^1]: [ויקיפדיה: Baphomet](https://en.wikipedia.org/wiki/Baphomet)
 [^2]: [אלבום תמונות](https://imgur.com/a/kmCG11v)
