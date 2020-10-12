@@ -55,7 +55,7 @@
     <div class="main mx-6 flex">
       <app-navbar-menu class="" />
       <NuxtLink
-        :to="{name: 'join', query: null}"
+        :to="{name: 'join', query: {type: 't', id: '051F0EABF1'}}"
         class="hidden self-center md:flex justify-center items-center text-gray-400 hover:text-white bg-gray-800 hover:bg-red-600 border border-gray-600 hover:border-gray-800 text-sm py-2 leading-none px-4 mr-4 rounded-md text-center font-bold tracking-wide trans-100"
       >
         <span class="-mt-01">
