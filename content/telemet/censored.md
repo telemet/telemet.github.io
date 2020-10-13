@@ -4,7 +4,7 @@ description: רשימה כללית וקישורים לתכנים שצונזרו 
 img: /telemet/images/c-censored.jpg
 alt: המערכה למען שחרור העם
 # createdAt: 2020-07-26
-type: c
+type: draft
 # feature: true
 author:
   name: telemet

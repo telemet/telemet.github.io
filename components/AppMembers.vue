@@ -3,8 +3,13 @@
     <li
       v-for="(value, index) in users"
       :key="index"
+      v-scroll-to="{element: '#join', duration: 999, offset: -50}"
       class="px-2 py-1 hover:bg-red-700 hover:text-white rounded m-1 inline-block text-lg cursor-pointer group transition-all duration-1000 hover:duration-200 ease-in-out"
+      @click.prevent="setInvite(value[0])"
     >
+      <!-- @click.prevent="$router.replace({query: {id: value[0]}})" -->
+      <!-- @click.prevent="$router.go({path: '/#join', query: {id: value[0]}})" -->
+      <!-- @click="setInvite(value[0])" -->
       <span class="">{{ value[1] }}</span>
       <span class="">{{ value[2] }}</span>
       <span
@@ -44,6 +49,13 @@ export default {
     const data = await this.$axios.$get(this.api)
     this.dataReady = true
     this.users = data.values.reverse()
+  },
+  methods: {
+    setInvite(value) {
+      this.$emit('setInvite', value)
+      // this.$router.replace('/')
+      this.$router.replace({query: {id: value}})
+    }
   }
 }
 </script>

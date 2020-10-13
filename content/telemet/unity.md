@@ -1,11 +1,10 @@
 ---
 title: האיחוד 2.0
-# description: האמת היא היעד האולטימטיבי
 description: כי אין כוח גדול יותר לשינוי אמת מאשר הכוח של אחדות דרך ידע 
-img: /telemet/images/telemet-hands.jpg
+img: /telemet/images/c-unity.jpg
 alt: המערכה למען שחרור העם
-createdAt: 2020-07-26
-type: draft
+# createdAt: 2020-07-26
+type: c
 author:
   # img: telemet.jpg
   name: telemet

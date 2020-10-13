@@ -16,8 +16,8 @@
       :class="{active: isOpen, hidden: !isOpen}"
       class="dropdown absolute mt-13 w-36 rounded-md bg-red-700 shadow-lg opacity-0 transition-opacity duration-200 ease-in-out scale-0"
     >
+      <li><nuxt-link to="/feature">מומלצים</nuxt-link></li>
       <li><nuxt-link to="/telemet/faq">אודות</nuxt-link></li>
-      <!-- <li><nuxt-link to="/join">הרשמה</nuxt-link></li> -->
       <!-- <li><a href="https://t.me/telemetISR" target="blank">טלגרם</a></li>
       <li>
         <a href="https://www.facebook.com/groups/telemetISR" target="blank"

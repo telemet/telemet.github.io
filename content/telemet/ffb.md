@@ -5,8 +5,8 @@ description: וכל מי שממשיך את פעילותו בפייסבוק בד�
 img: /telemet/images/telemet-ffb.jpg
 alt: המערכה למען שחרור העם
 # createdAt: 2020-07-26
-type: c
-feature: true
+type: draft
+# feature: true
 author:
   name: telemet
   hname: טלאֱמֶת

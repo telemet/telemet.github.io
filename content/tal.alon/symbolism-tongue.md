@@ -1,5 +1,5 @@
 ---
-title: הסמליות של חשיפת לשון
+title: הסמליות של חשיפת הלשון
 description: אחד מסמלי השעבוד לשטן הבולטים והנפוצים ביותר.
 img: /tal.alon/images/tongue.jpg
 type: t
