@@ -31,7 +31,7 @@
           />
           <div class="clearfix" />
           <NuxtLink
-            to="/t/tal.amitay/unity"
+            to="/telemet/unity#שלב-א׳---הרשמה"
             class="mx-auto text-sm md:text-base mt-2 inline-block text-gray-400 hover:text-gray-100 trans-100 focus"
             >בשיטת חבר-מביא-חבר</NuxtLink
           >
@@ -42,10 +42,10 @@
 
     <section id="people" class="bg-gray-800 opacity-90">
       <div class="container text-center p-10">
-        <h3 class="text-red-700 font-bold text-5xl tracking-wide">
+        <h3 class="text-red-700 font-bold text-5xl md:text-6xl tracking-wide">
           כי הכוח של האנשים
         </h3>
-        <p class="font-normal text-2xl tracking-wider text-white">
+        <p class="font-normal text-2xl md:text-3xl tracking-wider text-white">
           גדול בהרבה מהאנשים עם הכוח
         </p>
         <hr class="my-10 border-gray-700" />
@@ -55,17 +55,17 @@
 
     <section id="join" class="bg-gray-900 opacity-90">
       <div class="container text-center p-10">
-        <h3 class="text-red-700 font-bold text-5xl tracking-wide">הרשמה</h3>
-        <p class="font-normal text-2xl text-white tracking-wider">
-          למערכה לשחרור העם
+        <h3 class="text-red-700 font-bold text-5xl md:text-6xl tracking-wide">
+          הרשמה
+        </h3>
+        <p class="font-normal text-2xl md:text-3xl text-white tracking-wider">
+          בשיטת חבר מביא חבר
+        </p>
+        <p class="mt-6">
+          <!-- בשלב זה ההרשמה למערכה לשחרור העם מתבצעת ע״י הזמנה אישית בלבד. <br /> -->
+          <NuxtLink to="/telemet/unity" class="">פרטים נוספים</NuxtLink>
         </p>
         <hr class="my-10 border-gray-800" />
-        <p class="">
-          בשלב זה ההרשמה למערכה לשחרור העם מתבצעת ע״י הזמנה אישית בלבד. <br />
-          לפרטים נוספים
-          <NuxtLink to="/telemet/unity" class="">לחצו כאן</NuxtLink>
-          .
-        </p>
         <AppFormCampaign state="t" class="max-w-xl mx-auto my-12" />
       </div>
     </section>
