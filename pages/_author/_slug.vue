@@ -122,7 +122,7 @@
           </h1>
           <NuxtLink
             v-if="author.id"
-            :to="{name: 'join', query: {id: author.id, type: post.type}}"
+            :to="{path: '/#join', query: {id: author.id, type: post.type}}"
             class="ml-4 flex justify-center items-center text-gray-100  bg-red-600 text-sm py-3 leading-none px-4 mr-14 rounded-md text-center font-bold tracking-wide trans-100"
           >
             <span class="-mt-01">
