@@ -52,8 +52,7 @@ export default {
   },
   methods: {
     setInvite(value) {
-      this.$emit('setInvite', value)
-      // this.$router.replace('/')
+      // this.$emit('setInvite', value)
       this.$router.replace({query: {id: value}})
     }
   }

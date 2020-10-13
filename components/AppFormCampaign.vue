@@ -132,10 +132,6 @@ export default {
     state: {
       type: String,
       default: ''
-    },
-    inviteid: {
-      type: String,
-      default: null
     }
   },
   data() {
@@ -145,33 +141,21 @@ export default {
       lastName: null,
       email: null,
       donate: '',
-      inviteCode: this.$route.query.id,
+      inviteCode: null,
       errors: [],
       reg: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/
     }
   },
-  // watch: {
-  //   inviteCode(newVal) {
-  //     this.$router.push({query: {...this.$route.query, id: newVal}})
-  //   },
-  //   '$route.query.id': function(val) {
-  //     this.inviteCode = val
-  //   }
-  // },
-  computed: {
-    invitation: {
-      get: () => this.inviteCode,
-      set: (newVal) => (this.inviteCode = newVal)
+  watch: {
+    $route(to, from) {
+      this.inviteCode = to.query.id
     }
   },
-  // mounted() {
-  //   if (this.$route.query.id) {
-  //     this.inviteCode = this.$route.query.id
-  //     this.state = this.$route.query.id.charAt(0)
-  //   } else {
-  //     this.inviteCode = null
-  //   }
-  // },
+  mounted() {
+    if (this.$route.query.id) {
+      this.inviteCode = this.$route.query.id
+    }
+  },
   methods: {
     // inviteCode() {
     //   if (this.$route.query.id) {

@@ -66,15 +66,9 @@
           <NuxtLink to="/telemet/unity" class="">לחצו כאן</NuxtLink>
           .
         </p>
-        <AppFormCampaign
-          :inviteid="invideId"
-          state="t"
-          class="max-w-xl mx-auto my-12"
-        />
-        <!-- @setInvite="setInvite(payload[1])" -->
+        <AppFormCampaign state="t" class="max-w-xl mx-auto my-12" />
       </div>
     </section>
-    <pre>{{ inviteId }}</pre>
   </div>
 </template>
 
@@ -85,13 +79,13 @@ export default {
       title: 'ראשי',
       description: 'דף הבית של טלאֱמֶת',
       poster: 'https://telemet.org/images/telemet-poster-fb.jpg',
-      invideId: ''
+      inviteId: ''
     }
   },
   methods: {
-    setInvite(payload) {
-      this.inviteId = payload
-    }
+    // setInvite(value) {
+    //   this.inviteId = value
+    // }
   },
   head() {
     return {
