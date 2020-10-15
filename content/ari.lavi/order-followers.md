@@ -3,8 +3,8 @@ title: ממלאי פקודות
 description: איך ממלאי פקודות במשטרה ובצבא הם חלק מכת שהורסת את חופש האדם ברחבי העולם.
 img: /ari.lavi/images/order-followers.jpg
 type: t
+fbUrl: 1876752582466064
 author:
-  #   id: 0530C4867A
   name: ari.lavi
   hname: ארי לביא
   status: sub
