@@ -78,7 +78,7 @@ author:
 - פוסטר ראשי (לשיתוף כפוסט). [קישור לשמירת הקובץ](https://github.com/telemet/telemet/blob/master/content/telemet/images/c-unity-square.jpg)
 
 <p>
-  <poster src="/telemet/images/c-unity-square.jpg" alt="האיחוד"></poster>
+  <poster src="/telemet/images/c-unity-square.jpg" alt="האיחוד" />
 </p>
 
 <!-- - פוסטר ראשי (לשיתוף כתמונת רקע)
@@ -90,7 +90,13 @@ author:
 - פוסטר ראשי (לשיתוף כתמונת רקע). [קישור לשמירת הקובץ](https://github.com/telemet/telemet/blob/master/content/telemet/images/c-unity-fb.jpg)
 
 <p>
-  <poster src="/telemet/images/c-unity-fb.jpg" alt="האיחוד"></poster>
+  <poster src="/telemet/images/c-unity-fb.jpg" alt="האיחוד" />
+</p>
+
+- מסגרת לתמונת פרופיל בפייסבוק: [קישור להוספת מסגרת](https://www.facebook.com/profilepicframes/?selected_overlay_id=659430644968878)
+
+<p>
+  <poster src="/telemet/images/c-unity-fb-sticker.jpg" class="mx-auto" alt="האיחוד" />
 </p>
 
 <!-- ---
