@@ -13,7 +13,7 @@
         <h1 class="text-center text-3xl">
           <span class="font-bold pl-2 text-gray-100">#האיחוד</span>
           <span class="divider text-gray-400">|</span>
-          <span class="text-gray-400 pr-2">מתאגדים ומאחדים</span>
+          <span class="text-gray-400 pr-2">מתאחדים ומאחדים</span>
         </h1>
       </div>
     </section>
