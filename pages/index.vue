@@ -20,7 +20,7 @@
           <span class="font-bold pl-2 text-gray-100">#האיחוד</span>
           <span class="divider text-gray-400">|</span>
           <span class="text-gray-400 pr-2">
-            מתאגדים ומאחדים
+            מתאחדים ומאחדים
           </span>
         </h1>
         <div class="mt-10 text-center">
