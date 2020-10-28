@@ -3,8 +3,8 @@ title: אי עטיית מסכה
 description: ההתמודדות שלי עם קנס על אי עטיית מסכה, איסוף ראיות ובקשתי להישפט.
 # img: https://images.pexels.com/photos/3951628/pexels-photo-3951628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 img: https://images.pexels.com/photos/3951373/pexels-photo-3951373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
-# type: t
-# feature: true
+type: t
+feature: true
 author:
   name: tal.amitay
   hname: טל אמיתי
@@ -20,7 +20,7 @@ author:
 
 ## ראיות
 
-ראיות מצורפות כנספחים למסמך זה וכקבצים (7) בפורמט PDF:
+ראיות מצורפות כנספחים למסמך זה וכקבצים (6) בפורמט PDF:
 
 1. צו בריאות העם [^1]
 1. משרד הבריאות - החרגה מחבישת מסכה [^2]
