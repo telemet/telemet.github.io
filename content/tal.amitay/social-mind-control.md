@@ -56,5 +56,10 @@ author:
 
 > כשיותר מאתנו יהיו משוחררים מהשליטה המחשבתית בפייסבוק יהיה יותר קל, פשוט ואפקטיבי ליידע ולהניע את הציבור לדרך שמתיישרת עם האמת ולחופש בו כולנו חפצים.
 
+<div class="video">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/YpOF4B68ThM" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
 [^1]: [מתכנתים אותנו](https://www.youtube.com/watch?v=uJpU1hJ5Teg)
 [^2]: [מרכז קוגנטיקה](https://www.cognetica.co.il/10-cognitive-distortions/)
