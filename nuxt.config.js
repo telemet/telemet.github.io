@@ -82,6 +82,10 @@ export default {
     manifest: {
       lang: 'he'
     },
+    workbox: {
+      /* workbox options */
+      enabled: false
+    },
     meta: {
       name: 'טלאֱמֶת',
       lang: 'he',
